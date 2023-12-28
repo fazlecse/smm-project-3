@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSprint</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+
+    <!-- Fontawesome6-Js-link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
+    <!-- Bootstrap5-Css-link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl-carousel-Css-link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Slick slider Css link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- select2-Css-link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- fancybox css link -->
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+
+
+    <!-- Style Css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body onload="preloaderFunction()" class="">
+
+    <!-- Preloader section start -->
+    <div id="preloader">
+        <div class="load">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+        </div>
+    </div>
+    <!-- Preloader section end -->
+
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-light fa-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo-white.png"
+                            alt=""></a>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fa-light fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="language-box">
+                                <i class="fa-regular fa-coins"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>USD</option>
+                                    <option value="1">EUR</option>
+                                    <option value="2">bdt</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="login.html"><i
+                                class="login-icon fa-light fa-right-to-bracket"></i><span class="d-none d-md-block">sign
+                                up</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="notification-panel">
+                            <button class="dropdown-toggle">
+                                <i class="fal fa-bell" aria-hidden="true"></i>
+                                <span class="count">3</span>
+                            </button>
+                            <ul class="notification-dropdown">
+                                <div class="dropdown-box">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">6 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">1 Day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">3 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="clear-all fixed-bottom">
+                                    <a href="">Clear all</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                                <img src="./assets/img/Person/1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <ul class="user-dropdown">
+                                <li>
+                                    <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                                </li>
+                                <li>
+                                    <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                                </li>
+                                <li>
+                                    <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section end -->
+
+    <!-- Bottom Mobile Tab nav section start -->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasNavbar"
+                href="#offcanvasNavbar" aria-current="page"><i class="fa-light fa-list"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-light fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
+        </li>
+    </ul>
+    <!-- Bottom Mobile Tab nav section end -->
+
+    <!-- Hero section start -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-section-inner">
+                <div class="row g-5 justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <span class="section-subtitle">We Are SMM Matrix</span>
+                            <h1 class="hero-title">
+                                We Will Help You To Grow Your Business
+                            </h1>
+                            <p class="hero-description">Social Media Marketing (SMM) is a powerful tool for businesses
+                                and individuals to promote their products or services on various social media platforms.
+                            </p>
+                            <div class="btn-area">
+                                <a href="" class="cmn-btn">our services</a>
+                                <a data-fancybox
+                                    href="https://www.youtube.com/watch?v=XWZ4GUuunVE&ab_channel=HrishiComputerEducation"
+                                    class="video-play-btn">
+                                    <i class="fa-regular fa-play"></i>
+                                </a>
+                                <p class="mb-0">WATCH VIDEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mx-auto">
+                        <div class="login-signup-form">
+                            <form>
+                                <div class="section-header">
+                                    <h3>Welcome back!</h3>
+                                    <div class="description">Hey Enter your details to get sign in to your account
+                                    </div>
+                                </div>
+                                <div class="cmn-btn-group">
+                                    <div class="row g-2">
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                                    src="assets/img/login-signup/google.png" alt="">Google</button>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                                    src="assets/img/login-signup/facebook.png" alt="">Facebook</button>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <button type="submit" class="btn cmn-btn3 w-100 social-btn"><img
+                                                    src="assets/img/login-signup/apple-logo.png" alt="">Apple</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="divider">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            placeholder="Username or Email">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="password-box">
+                                            <input type="password" class="form-control password"
+                                                id="exampleInputPassword1" placeholder="Password">
+                                            <i class="password-icon fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check d-flex justify-content-between">
+                                            <div class="check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Remember
+                                                    me</label>
+                                            </div>
+                                            <div class="forgot highlight">
+                                                <a href="">Forgot password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="cmn-btn mt-30 w-100">Log In</button>
+
+                                <div class="pt-20 text-center">
+                                    Don't have an account?
+                                    <p class="mb-0 highlight mt-1"><a href="signup.html">Create an account</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero section end -->
+
+    <!-- Feature section start -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="icon-area">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="content-area">
+                            <h4 class="title">Save Your Time</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="icon-area">
+                            <i class="fa-sharp fa-regular fa-lightbulb"></i>
+                        </div>
+                        <div class="content-area">
+                            <h4 class="title">Best Strategy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="icon-area">
+                            <i class="fa-regular fa-hand-holding-dollar"></i>
+                        </div>
+                        <div class="content-area">
+                            <h4 class="title">Affordable Price For You</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="icon-area">
+                            <i class="fa-regular fa-headset"></i>
+                        </div>
+                        <div class="content-area">
+                            <h4 class="title">Customer Support</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-section-inner">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="about-content">
+                            <span class="section-subtitle">About Us</span>
+                            <h2 class="section-title">SMM Matrix Redefining Social Media Excellence</h2>
+                            <p>
+                                At SMM Matrix, we're not just a social media marketing agency — we're your partners in
+                                digital success. Established with a passion for propelling businesses to new heights
+                                through strategic online presence, we bring a unique blend of creativity, innovation,
+                                and expertise to every project.
+                            </p>
+
+                            <div class="btn-area mt-30">
+                                <button type="buttot" class="cmn-btn">contact us</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-1">
+                        <div class="about-image-area">
+                            <img src="./assets/img/about/girl-img.png" alt="">
+                            <img class="heart-img" src="./assets/img/shape/heart.png" alt="">
+                            <img class="thumb-img" src="./assets/img/shape/thumb.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Service section start -->
+    <section class="service-section">
+        <div class="service-section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">our service</span>
+                        <h2 class="section-title mx-auto">What Service Do We Have For Your Business</h2>
+                        <p class="cmn-para-text mx-auto">Welcome to SMM Matrix, where our mission is to empower
+                            businesses
+                            through a spectrum of digital services that enhance online presence, engage audiences, and
+                            drive
+                            results.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-chart-scatter"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">SEO Strategy</h4>
+                                <p>Our SEO journey begins with comprehensive keyword research. We identify high-impact
+                                    keywords relevant to your industry, ensuring that every piece of content is
+                                    strategically crafted to resonate with both search engines and your target audience.
+                                </p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-rocket"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">Social Marketing</h4>
+                                <p>Our social media strategy begins with meticulous content planning. We curate content
+                                    that
+                                    aligns with your brand voice, resonates with your audience, and strategically
+                                    communicates your message across various social platforms.
+
+                                </p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">Product Branding</h4>
+                                <p>We work closely with you to understand the essence of your product and your brand
+                                    vision.
+                                    From logo design to color palettes and typography, we craft a brand identity that
+                                    reflects your unique story, ensuring a distinctive and memorable presence in the
+                                    market.
+                                </p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">Email Marketing</h4>
+                                <p>Our email marketing journey begins with strategic campaign planning. We work closely
+                                    with
+                                    you to understand your business goals, target audience, and unique value
+                                    propositions.
+                                    From there, we design email campaigns that guide subscribers through engaging and
+                                    conversion-focused journeys.</p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-display"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">Digital Marketing</h4>
+                                <p>We begin by understanding your business goals, target audience, and unique value
+                                    propositions. Our team then crafts an integrated digital marketing strategy that
+                                    combines various channels — from social media and email marketing to SEO and paid
+                                    advertising — ensuring a cohesive and effective approach.</p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="cmn-box">
+                            <div class="icon-area">
+                                <i class="fa-regular fa-book-open-cover"></i>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="title">Content Writter</h4>
+                                <p>Our content writers specialize in the art of storytelling. Whether it's a blog post,
+                                    article, or marketing copy, we infuse your brand's unique story into every piece of
+                                    content, creating narratives that leave a lasting impression on your audience.</p>
+                                <a class="link" href="">Learn more <i
+                                        class="fa-sharp fa-regular fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section end -->
+
+    <!-- Why Choose us section start -->
+    <section class="why-choose-us-section">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">why choose us</span>
+                    <h2 class="section-title mx-auto"> Elevating Your Experience, Amplifying Your Success </h2>
+                    <p class="cmn-para-text mx-auto">At SMM Matrix, we recognize that selecting a partner for your
+                        business needs is a significant decision. Here's why choosing us is not just a choice but an
+                        investment in a dynamic and impactful collaboration</p>
+                </div>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-users"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Professional Team:</h5>
+                                    <span>At SMM Matrix, our professional team is the backbone of our success.
+                                        Comprising seasoned experts in their respective fields, we bring a wealth of
+                                        knowledge and experience to every project.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-briefcase"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Experience:</h5>
+                                    <span>Our legacy is built on a foundation of experience. With a proven track
+                                        record and a portfolio of successful projects, SMM Matrix stands as a
+                                        testament to our commitment to excellence.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex d-none d-lg-block">
+                    <img src="./assets/img/why-choose-us/why-choose-us.webp" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-trophy-star"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Success Guaranteed:</h5>
+                                    <span>Success is not just a goal; it's a commitment we make to every client. At
+                                        SMM Matrix, we stand by our promise to deliver measurable and impactful
+                                        results.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fa-regular fa-monitor-waveform"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Data-Driven Approach:</h5>
+                                    <span>In a digital age, decisions without data are mere guesses. At SMM Matrix,
+                                        we pride ourselves on our data-driven approach. Every strategy, and every
+                                        solution is backed by comprehensive data analysis.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose us section end -->
+
+    <!-- Achivement section start -->
+    <section class="achivement-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 achivement-counter-area">
+                    <div class="row g-4">
+                        <div class="col-md-6 cmn-box3-item">
+                            <div class="cmn-box3">
+                                <div class="icon-area">
+                                    <i class="fa-regular fa-users"></i>
+                                </div>
+                                <div class="content-area">
+                                    <h3><span class="achivement-counter">35</span>+</h3>
+                                    <h5>HAPPY CLIENTS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 cmn-box3-item">
+                            <div class="cmn-box3">
+                                <div class="icon-area">
+                                    <i class="fa-sharp fa-regular fa-file-invoice"></i>
+                                </div>
+                                <div class="content-area">
+                                    <h3><span class="achivement-counter">102</span>+</h3>
+                                    <h5>PROJECTS DONE</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 cmn-box3-item">
+                            <div class="cmn-box3">
+                                <div class="icon-area">
+                                    <i class="fa-regular fa-handshake"></i>
+                                </div>
+                                <div class="content-area">
+                                    <h3><span class="achivement-counter">28</span>+</h3>
+                                    <h5>TEAM ADVISORS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 cmn-box3-item">
+                            <div class="cmn-box3">
+                                <div class="icon-area">
+                                    <i class="fa-regular fa-trophy-star"></i>
+                                </div>
+                                <div class="content-area">
+                                    <h3><span class="achivement-counter">8</span>+</h3>
+                                    <h5>GLORIOUS YEARS</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-subtitle">Achivement</span>
+                    <h3 class="section-title">We Complete 1500+ Project Yearly Successfully & Still Counting</h3>
+                    <p class="cmn-para-text">At SMM Matrix, our track record speaks volumes about our dedication and
+                        proficiency. Year after
+                        year, we successfully complete over 1500 projects, each one a testament to our commitment to
+                        excellence and client satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achivement section end -->
+
+    <!-- How it works section start -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">How It Works</span>
+                    <h2 class="section-title mx-auto">Unveiling the Seamless Path to Success</h2>
+                    <p class="cmn-para-text mx-auto">Embark on a seamless journey towards success with SMM Matrix. Our
+                        "How It Works" process is
+                        designed to simplify your experience while maximizing the impact of our services. Explore the
+                        steps below to understand how our collaboration unfolds:</p>
+                </div>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="far fa-address-book"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Register &amp; Log in</h5>
+                                    <span>Creating an account is the first step. then you need to log in</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Add Fund</h5>
+                                    <span>Next, pick a payment method and add funds to your account</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center d-flex d-none d-lg-block">
+                    <img src="./assets/img/how-it-works/how-it-works.webp" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Select a service</h5>
+                                    <span>Select the services you want and get ready to receive more
+                                        publicity</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="cmn-box2">
+                                <div class="icon-box">
+                                    <i class="fab fa-angellist"></i>
+                                </div>
+                                <div class="content-box">
+                                    <h5 class="title">Enjoy Super Results</h5>
+                                    <span>You can enjoy incredible results when your order is complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How it works section end -->
+
+    <!-- Testimonial section start -->
+    <section class="testimonial-section">
+        <div class="bg-img-overlay"></div>
+        <div class="testimonial-section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">Testimonial</span>
+                        <h2 class="section-title mx-auto">what our Clients Say</h2>
+                        <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then
+                            create professional software. Lorem ipsum, dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-theme testimonial-carousel">
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/6.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Crol Mickey</h5>
+                                            <p>Sydney, Australia</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/7.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Jim Morison</h5>
+                                            <p>London, UK</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/8.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Tom Haris</h5>
+                                            <p>New York, USA</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/9.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 clasi="mb-0">Alex Cruis</h5>
+                                            <p>Dublin, Ireland</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/10.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 clasi="mb-0">Mitsubishi</h5>
+                                            <p>Tokyo, Japan</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Payment section start -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">PAYMENTS</span>
+                    <h2 class="section-title mx-auto">Our Payment Partners</h2>
+                    <p class="cmn-para-text mx-auto">At SMM Matrix, we understand that a seamless and secure payment
+                        process is crucial for your peace of mind.</p>
+                </div>
+                <div class="owl-carousel owl-theme payment-slider text-center">
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/2checkout.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/bank-transfer.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/block-io.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/blockchain.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/cashmaal.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/coin-payments.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/coinbase.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/coingate.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/flutterwave.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/instamojo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/coingate.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/vogue-pay.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/mercado-pago.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/mollie.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/monnify.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/pay-u-money.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/payeer.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/paytm.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/perfect-money.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/coingate.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="image-area">
+                            <img src="assets/img/gateway/stripe.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- Payment section end -->
+
+    <!-- Blog Section start -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <span class="section-subtitle">Our blogs</span>
+                        <h3 class="section-title mx-auto">our news & blogs</h3>
+                        <p class="cmn-para-text mx-auto mt-20">Welcome to our dynamic world of insights and information!
+                            Our Blogs section is your gateway to staying informed, discovering industry trends, and
+                            gaining valuable knowledge to propel your business forward.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/1.png" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Latest Trends and Industry Insights</a>
+                            </h4>
+                            <div class="para-text">
+                                <p>
+                                    IStay updated with the most recent trends and insights shaping your industry. Our
+                                    blogs offer in-depth analysis and commentary on emerging technologies, market
+                                    dynamics, and shifts that could impact your business.
+                                </p>
+                            </div>
+
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/2.jpeg" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Expert Opinions and Thought
+                                    Leadership</a></h4>
+                            <div class="para-text">
+                                <p>
+                                    Delve into the minds of industry experts and thought leaders. Our blogs feature
+                                    perspectives from seasoned professionals, providing you with valuable insights and
+                                    strategies to navigate challenges and seize opportunities.
+                                </p>
+                            </div>
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/3.png" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Practical Tips and How-To Guides</a></h4>
+                            <div class="para-text">
+                                <p>
+                                    Looking for actionable advice? Our how-to guides and practical tips are designed to
+                                    offer step-by-step solutions to common challenges. Learn best practices and
+                                    implement strategies that can drive tangible results for your business.
+                                </p>
+                            </div>
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section end -->
+
+    <!-- Footer Section start -->
+    <section class="footer-section pb-50">
+        <div class="bg-img-overlay"></div>
+        <div class="footer-section-inner">
+            <div class="container">
+                <div class="row gy-4 gy-sm-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="widget-logo mb-30">
+                                <a href="#nav_area"><img class="logo" src="assets/img/logo/logo-white.png" alt=""></a>
+                            </div>
+                            <p>
+                                Experience the SMM Matrix Advantage - Empowering Social Success with Data-Driven
+                                Solutions.
+                            </p>
+
+                            <div class="social-area mt-50">
+                                <ul class="d-flex">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Quick Links</h5>
+                            <ul>
+                                <li><a class="widget-link" href="about.html">About</a></li>
+                                <li><a class="widget-link" href="faq.html">FAQ</a></li>
+                                <li><a class="widget-link" href="index.html">Home</a></li>
+                                <li><a class="widget-link" href="blog.html">Blog</a></li>
+                                <li><a class="widget-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Company Policy</h5>
+                            <ul>
+                                <li><a class="widget-link" href="policy.html">Privacy Policy</a></li>
+                                <li><a class="widget-link" href="">Refund Policy</a></li>
+                                <li><a class="widget-link" href="">Terms of use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Newsletter</h5>
+                            <p>Subscribe To Our Mailing List
+                                And Stay Up To Date</p>
+                            <form class="newsletter-form">
+                                <input type="text" class="form-control" placeholder="Your email">
+                                <button type="button" class="subscribe-btn"><i
+                                        class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr class="cmn-hr">
+                <!-- Copyright-area-start -->
+                <div class="copyright-area">
+                    <div class="row gy-4">
+                        <div class="col-sm-6">
+                            <p>Copyright ©2023 <a class="highlight" href="index.html">Email Template</a> All Rights
+                                Reserved
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="language">
+                                <a href="" class="language">English</a>
+                                <a href="" class="language">Spanish</a>
+                                <a href="" class="language">Germany</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright-area-end -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section end -->
+
+
+
+
+
+
+
+
+    <!-- Jquery Js link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.7.1.min.js"></script> -->
+
+    <!-- Bootstrap Js link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl carausel Js link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper Js link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Slick slider js link -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- select2 Js link -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- fancybox Js link -->
+    <script src="assets/js/fancybox.umd.js"></script>
+    <!-- counterup Js link -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+
+
+
+
+
+
+    <!-- Main Js link -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

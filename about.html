@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSprint</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
+
+    <!-- Fontawesome6-Js-link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.min.css"> -->
+    <!-- Bootstrap5-Css-link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl-carousel-Css-link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Slick slider Css link -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- select2-Css-link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- jqvmap map css link -->
+    <link rel="stylesheet" href="assets/css/jqvmap.min.css">
+
+
+    <!-- Style Css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body onload="preloaderFunction()" class="">
+
+    <!-- Preloader section start -->
+    <div id="preloader">
+        <div class="load">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+        </div>
+    </div>
+    <!-- Preloader section end -->
+
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-light fa-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo-white.png"
+                            alt=""></a>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fa-light fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="language-box">
+                                <i class="fa-regular fa-coins"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>USD</option>
+                                    <option value="1">EUR</option>
+                                    <option value="2">bdt</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="login.html"><i
+                                class="login-icon fa-light fa-right-to-bracket"></i><span
+                                class="d-none d-md-block">Login</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="notification-panel">
+                            <button class="dropdown-toggle">
+                                <i class="fal fa-bell" aria-hidden="true"></i>
+                                <span class="count">3</span>
+                            </button>
+                            <ul class="notification-dropdown">
+                                <div class="dropdown-box">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">6 Hours ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">1 Day ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">3 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fal fa-bell" aria-hidden="true"></i>
+                                            <div class="text">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                <span class="time">4 Days ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="clear-all fixed-bottom">
+                                    <a href="">Clear all</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                                <img src="./assets/img/Person/1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <ul class="user-dropdown">
+                                <li>
+                                    <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                                </li>
+                                <li>
+                                    <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                                </li>
+                                <li>
+                                    <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section end -->
+
+    <!-- Bottom Mobile Tab nav section start -->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasNavbar"
+                href="#offcanvasNavbar" aria-current="page"><i class="fa-light fa-list"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-light fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
+        </li>
+    </ul>
+    <!-- Bottom Mobile Tab nav section end -->
+
+    <!-- Banner section start -->
+    <div class="banner-section">
+        <div class="bg-img-overlay"></div>
+        <div class="banner-section-inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col">
+                        <div class="breadcrumb-area">
+                            <h3>About Us</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="home-1.html"><i class="fa-light fa-house"></i>
+                                        Home</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-section-inner">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <div class="about-content">
+                            <span class="section-subtitle">About Us</span>
+                            <h2 class="section-title">SMM Matrix Redefining Social Media Excellence</h2>
+                            <p>
+                                At SMM Matrix, we're not just a social media marketing agency — we're your partners in
+                                digital success. Established with a passion for propelling businesses to new heights
+                                through strategic online presence, we bring a unique blend of creativity, innovation,
+                                and expertise to every project.
+                            </p>
+                            <br>
+                            <ul class="item-list-container">
+                                <li class="item">
+                                    <div class="icon-box">
+                                        <i class="fa-regular fa-bullseye-pointer"></i>
+                                    </div>
+                                    <div class="item-content">
+                                        <h5>Strategic Brilliance :</h5>
+                                        <span>We don't just create content; we craft strategies. Our team of experts
+                                            meticulously plans every campaign, ensuring that your brand's message
+                                            resonates with your target audience.</span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon-box">
+                                        <i class="fa-regular fa-timeline-arrow"></i>
+                                    </div>
+                                    <div class="item-content">
+                                        <h5>Time Efficiency :</h5>
+                                        <span>In the fast-paced world of social media, timing is everything. Our
+                                            streamlined processes and agile approach guarantee timely delivery without
+                                            compromising on quality.</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <div class="btn-area mt-30">
+                                <button type="buttot" class="cmn-btn">contact us</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-1">
+                        <div class="about-image-area rotate-group-images">
+                            <figure class="img1">
+                                <img src="assets/img/about/contemplating-about-crime-details.jpg" alt="">
+                            </figure>
+                            <figure class="img2">
+                                <img src="assets/img/about/social-media-influencer.jpg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Feature section start -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-section-inner">
+                <div class="item">
+                    <div class="icon-area">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="content-area">
+                        <h4 class="title">Save Your Time</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-area">
+                        <i class="fa-sharp fa-regular fa-lightbulb"></i>
+                    </div>
+                    <div class="content-area">
+                        <h4 class="title">Best Strategy</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-area">
+                        <i class="fa-regular fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="content-area">
+                        <h4 class="title">Affordable Price For You</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon-area">
+                        <i class="fa-regular fa-headset"></i>
+                    </div>
+                    <div class="content-area">
+                        <h4 class="title">Customer Support</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus neculam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- Faq section start -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row gy-4 gy-md-5 gx-sm-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="left-side">
+                        <span class="section-subtitle">Faqs</span>
+                        <h2 class="section-title">
+                            any questions? we have
+                            answers!
+                        </h2>
+                        <p class="cmn-para-text mx-auto mt-20">SocialSprint is a cutting-edge communication platform
+                            designed to streamline conversations for individuals and businesses. It offers a range of
+                            features to enhance collaboration and connectivity.</p>
+                        <div class="btn-area mt-30">
+                            <a href="" class="cmn-btn">contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="faq-content">
+                        <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headinOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What services does your SMM website offer?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headinOne" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <p>
+                                                We provide a comprehensive range of social media marketing services,
+                                                including strategy development, content creation, platform management,
+                                                advertising campaigns, and analytics. Explore our [Services Page] for a
+                                                detailed overview.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headinTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        How can I get started with your SMM services?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headinTwo"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <p>
+                                                Getting started is simple! Visit our [Get Started] page, fill out the
+                                                form, and our team will reach out to you promptly to discuss your goals
+                                                and tailor a strategy to meet your specific needs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headinThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true"
+                                        aria-controls="collapseThree">
+                                        What social media platforms do you specialize in?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headinThree" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <p>
+                                                Our expertise spans across major social media platforms, including but
+                                                not limited to Facebook, Instagram, Twitter, LinkedIn, and Pinterest. We
+                                                tailor our strategies to align with the unique dynamics of each
+                                                platform.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headinFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="true"
+                                        aria-controls="collapseFour">
+                                        How do you create content for social media?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headinFour"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <p>
+                                                Our content creation process involves understanding your brand, target
+                                                audience, and goals. We craft engaging and shareable content, including
+                                                images, videos, and captions, to enhance your brand presence and
+                                                engagement.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Can I track the performance of my social media campaigns?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Absolutely. We provide detailed analytics reports that track the performance
+                                            of your social media campaigns. These reports include metrics such as reach,
+                                            engagement, conversion rates, and more, giving you valuable insights into
+                                            the effectiveness of your strategies.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Is my information secure when using your services?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Yes, we prioritize the security and confidentiality of your information. Our
+                                            website and services incorporate industry-standard security measures to
+                                            protect your data.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Faq section end -->
+
+    <!-- Testimonial section start -->
+    <section class="testimonial-section">
+        <div class="bg-img-overlay"></div>
+        <div class="testimonial-section-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">Testimonial</span>
+                        <h2 class="section-title mx-auto">what our Clients Say</h2>
+                        <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then
+                            create professional software. Lorem ipsum, dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-theme testimonial-carousel">
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/6.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Crol Mickey</h5>
+                                            <p>Sydney, Australia</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/7.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Jim Morison</h5>
+                                            <p>London, UK</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/8.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 class="mb-0">Tom Haris</h5>
+                                            <p>New York, USA</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/9.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 clasi="mb-0">Alex Cruis</h5>
+                                            <p>Dublin, Ireland</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-box">
+                                <div class="testimonial-header">
+                                    <div class="testimonial-title-area">
+                                        <div class="testimonial-thumbs">
+                                            <img src="assets/img/Person/10.jpg" alt="" />
+                                        </div>
+                                        <div class="testimonial-title">
+                                            <h5 clasi="mb-0">Mitsubishi</h5>
+                                            <p>Tokyo, Japan</p>
+                                        </div>
+                                    </div>
+                                    <ul class="ratings">
+                                        <li>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="active fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="quote-area">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis dolor
+                                        totam
+                                        officiis! Dolore veniam exercitationem optio eveniet expedita esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Blog Section start -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <span class="section-subtitle">Our blogs</span>
+                        <h3 class="section-title mx-auto">our news & blogs</h3>
+                        <p class="cmn-para-text mx-auto mt-20">Welcome to our dynamic world of insights and information!
+                            Our Blogs section is your gateway to staying informed, discovering industry trends, and
+                            gaining valuable knowledge to propel your business forward.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/1.png" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Latest Trends and Industry Insights</a>
+                            </h4>
+                            <div class="para-text">
+                                <p>
+                                    IStay updated with the most recent trends and insights shaping your industry. Our
+                                    blogs offer in-depth analysis and commentary on emerging technologies, market
+                                    dynamics, and shifts that could impact your business.
+                                </p>
+                            </div>
+
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/2.jpeg" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Expert Opinions and Thought
+                                    Leadership</a></h4>
+                            <div class="para-text">
+                                <p>
+                                    Delve into the minds of industry experts and thought leaders. Our blogs feature
+                                    perspectives from seasoned professionals, providing you with valuable insights and
+                                    strategies to navigate challenges and seize opportunities.
+                                </p>
+                            </div>
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <a href="blog-details.html">
+                            <div class="img-box">
+                                <img src="assets/img/blog/3.png" alt="">
+                            </div>
+                        </a>
+                        <div class="content-box">
+                            <ul class="meta">
+                                <li class="item">
+                                    <a href="author.html"><span class="icon"><i class="fa-regular fa-user"></i></span>
+                                        <span>by Admin</span></a>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-messages"></i></span>
+                                    <span>25</span>
+                                </li>
+                                <li class="item">
+                                    <span class="icon"><i class="fa-regular fa-eye"></i></span>
+                                    <span>2120 Views</span>
+                                </li>
+                            </ul>
+                            <h4 class="blog-title"><a href="blog-details.html">Practical Tips and How-To Guides</a></h4>
+                            <div class="para-text">
+                                <p>
+                                    Looking for actionable advice? Our how-to guides and practical tips are designed to
+                                    offer step-by-step solutions to common challenges. Learn best practices and
+                                    implement strategies that can drive tangible results for your business.
+                                </p>
+                            </div>
+                            <a href="blog-details.html" class="blog-btn">read more<i
+                                    class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section end -->
+
+    <!-- Footer Section start -->
+    <section class="footer-section pb-50">
+        <div class="bg-img-overlay"></div>
+        <div class="footer-section-inner">
+            <div class="container">
+                <div class="row gy-4 gy-sm-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="widget-logo mb-30">
+                                <a href="#nav_area"><img class="logo" src="assets/img/logo/logo-white.png" alt=""></a>
+                            </div>
+                            <p>
+                                Experience the SMM Matrix Advantage - Empowering Social Success with Data-Driven
+                                Solutions.
+                            </p>
+
+                            <div class="social-area mt-50">
+                                <ul class="d-flex">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Quick Links</h5>
+                            <ul>
+                                <li><a class="widget-link" href="about.html">About</a></li>
+                                <li><a class="widget-link" href="faq.html">FAQ</a></li>
+                                <li><a class="widget-link" href="index.html">Home</a></li>
+                                <li><a class="widget-link" href="blog.html">Blog</a></li>
+                                <li><a class="widget-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Company Policy</h5>
+                            <ul>
+                                <li><a class="widget-link" href="policy.html">Privacy Policy</a></li>
+                                <li><a class="widget-link" href="">Refund Policy</a></li>
+                                <li><a class="widget-link" href="">Terms of use</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Newsletter</h5>
+                            <p>Subscribe To Our Mailing List
+                                And Stay Up To Date</p>
+                            <form class="newsletter-form">
+                                <input type="text" class="form-control" placeholder="Your email">
+                                <button type="button" class="subscribe-btn"><i
+                                        class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <hr class="cmn-hr">
+                <!-- Copyright-area-start -->
+                <div class="copyright-area">
+                    <div class="row gy-4">
+                        <div class="col-sm-6">
+                            <p>Copyright ©2023 <a class="highlight" href="index.html">Email Template</a> All Rights
+                                Reserved
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="language">
+                                <a href="" class="language">English</a>
+                                <a href="" class="language">Spanish</a>
+                                <a href="" class="language">Germany</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Copyright-area-end -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section end -->
+
+
+
+
+
+
+    <!-- Jquery Js link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.7.1.min.js"></script> -->
+
+    <!-- Bootstrap Js link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl carausel Js link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper Js link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Slick slider js link -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- select2 Js link -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- Twism map Js link -->
+    <script src="assets/js/jquery.twism.js"></script>
+    <!-- rangeSlider Js link -->
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+
+
+
+
+    <!-- Main Js link -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
