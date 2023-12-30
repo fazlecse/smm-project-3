@@ -53,7 +53,7 @@ $(document).ready(function () {
     // plan_area payment_slider
     $('.payment-slider').owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 1000,
         margin: 20,
         nav: false,

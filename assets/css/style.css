@@ -72,7 +72,7 @@ Typography
   --vivid-orange: #fb6116;
   --yellow: #FCDA69;
   --orange: #FFC83E;
-  --input-color: var(--bg-color3);
+  --input-color: var(--bg-color2);
   --input-color2: #ffffff;
   --primary-color-opacity-low: hsl(var(--base)/0.1);
   --primary-color-opacity-low2: hsl(var(--secondary)/.2);
@@ -464,13 +464,15 @@ textarea.form-control {
 
 .form-select {
   color: var(--body-color);
+  background-image: url(../img/accordion/white-down-arrow.png);
+  background-size: 12px;
 }
 
 .form-control,
 .form-select {
   border-radius: 5px;
   background-color: var(--input-color);
-  border: 1px solid var(--border-color1);
+  border: 1px solid transparent;
   height: 45px;
   color: var(--white);
 }
@@ -479,7 +481,7 @@ textarea.form-control {
 .form-select:focus {
   box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.1);
   border: 1px solid var(--primary-color);
-  background-color: var(--bg-color3);
+  background-color: var(--bg-color2);
   color: var(--white);
 }
 
@@ -774,6 +776,10 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.modal-content {
+  background-color: var(--bg-color3);
+}
+
 .modal-header {
   border-bottom: 1px solid var(--border-color1);
   padding: 12px 16px;
@@ -802,6 +808,8 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: none;
   border-radius: 6px;
   transition: var(--transition);
+  color: var(--white);
+  background-color: var(--bg-color3);
 }
 
 .cmn-btn-close:hover {
@@ -1195,7 +1203,7 @@ Reusable style section start
 Offcanvas section start 
 ----------------------------------------------*/
 .offcanvas {
-  background: var(--white);
+  background: var(--bg-color4);
 }
 
 .offcanvas.offcanvas-end {
@@ -1619,7 +1627,7 @@ section {
   font-size: 16px;
   color: var(--primary-color);
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: inline-flex;
   letter-spacing: 4px;
   text-transform: capitalize;
@@ -1638,9 +1646,9 @@ section {
   justify-content: center;
   margin-right: 14px;
   border-radius: 2px;
-  background: var(--white);
+  background: var(--bg-color3);
   color: var(--primary-color);
-  box-shadow: var(--shadow3);
+  box-shadow: var(--shadow1);
 }
 .social-area ul li a:hover {
   background-color: var(--primary-color);
@@ -1723,7 +1731,7 @@ hr.divider:after {
   position: relative;
   top: -12px;
   padding: 0 16px;
-  background: var(--bg-color2);
+  background: var(--bg-color3);
   color: var(--heading-color);
 }
 
@@ -2146,7 +2154,7 @@ user nav Profile start
   border-radius: 50%;
 }
 .profile-box .user-dropdown {
-  background: var(--white);
+  background: var(--bg-color4);
   box-shadow: var(--shadow2);
   width: 200px;
   overflow: hidden;
@@ -2184,7 +2192,7 @@ user nav Profile start
   transition: 0.4s;
 }
 .profile-box .user-dropdown li a:active, .profile-box .user-dropdown li a:focus, .profile-box .user-dropdown li a:hover {
-  background-color: var(--primary-color-opacity-low);
+  background-color: var(--bg-color3);
 }
 .profile-box .user-dropdown li a:last-child {
   border-bottom: none;
@@ -2276,7 +2284,7 @@ user nav Profile end
   background: var(--secondary);
 }
 .notification-panel .notification-dropdown {
-  background: var(--white);
+  background: var(--bg-color4);
   box-shadow: var(--shadow2);
   width: 290px;
   max-height: 336px;
@@ -2306,7 +2314,7 @@ user nav Profile end
   transition: var(--transition);
 }
 .notification-panel .notification-dropdown li a:active, .notification-panel .notification-dropdown li a:focus, .notification-panel .notification-dropdown li a:hover {
-  background: var(--primary-color-opacity-low);
+  background: var(--bg-color3);
 }
 .notification-panel .notification-dropdown li a i {
   background: var(--primary-color);
@@ -2335,7 +2343,7 @@ user nav Profile end
   color: var(--primary-color);
 }
 .notification-panel .notification-dropdown .clear-all {
-  background: var(--white);
+  background: var(--bg-color4);
   font-weight: 500;
   font-size: 16px;
   text-transform: capitalize;
@@ -3047,7 +3055,7 @@ Padding bottom
 01. Nav section start
 ----------------------------------------------*/
 .navbar.active {
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color4);
   box-shadow: var(--shadow1);
   z-index: 999;
   padding: 10px 0;
@@ -3072,7 +3080,8 @@ Padding bottom
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
+  background-color: var(--bg-color3);
+  color: var(--white);
 }
 .navbar .navbar-toggler:hover {
   background-color: var(--primary-color-opacity-low);
@@ -3170,7 +3179,7 @@ Nav end
 02. Bottom Mobile, Tab nav section start
 ----------------------------------------------*/
 .bottom-nav {
-  background: var(--white);
+  background: var(--bg-color4);
   justify-content: space-around;
   box-shadow: var(--shadow2);
   border-top-right-radius: 8px;
@@ -3403,7 +3412,7 @@ Service section end
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 15px;
-  background-color: var(--white);
+  background-color: var(--bg-color3);
 }
 
 .search-area :is(.form-control, .form-select, .cmn-btn) {
@@ -3420,17 +3429,20 @@ Service section end
 }
 .service-page-area .accordion-button {
   border-left: 2px solid transparent;
+  background-color: var(--bg-color3);
+  color: var(--white);
 }
 .service-page-area .accordion-button:focus,
 .service-page-area .accordion-button:not(.collapsed) {
   box-shadow: none;
-  background: var(--primary-color-opacity-low);
+  background: var(--bg-color4);
   border-left: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 .service-page-area .accordion-body {
   padding: 10px;
   border-left: 2px solid var(--primary-color);
+  background-color: var(--bg-color3);
 }
 .service-page-area tbody,
 .service-page-area td,
@@ -3446,6 +3458,7 @@ Service section end
 .service-page-area .table tr th,
 .service-page-area td {
   padding: 10px 12px !important;
+  color: var(--white);
 }
 .service-page-area .table tr th {
   font-weight: 500;
@@ -3453,6 +3466,11 @@ Service section end
 
 .table {
   margin-bottom: 0;
+  color: var(--white);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: var(--white);
 }
 
 .rtl .service-page-area .accordion-button:focus,
@@ -3595,14 +3613,6 @@ Faq end
 /*----------------------------------------------
 09. Testimonial section start
 ----------------------------------------------*/
-.testimonial-section {
-  position: relative;
-  background-color: var(--bg-color2);
-}
-.testimonial-section .testimonial-section-inner {
-  position: relative;
-  z-index: 1;
-}
 .testimonial-section .section-title,
 .testimonial-section .cmn-para-text {
   color: var(--white);
@@ -3610,10 +3620,9 @@ Faq end
 .testimonial-section .testimonial-box {
   position: relative;
   padding: 20px;
-  background: var(--white);
+  background: var(--bg-color3);
   border-radius: 4px;
   transition: var(--transition);
-  border: 1px solid var(--border-color1);
   margin-left: 20px;
 }
 .testimonial-section .testimonial-box .testimonial-thumbs {
@@ -3682,10 +3691,9 @@ Payment section end
 }
 
 .blog-box {
-  background: var(--white);
+  background: var(--bg-color3);
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid var(--border-color1);
 }
 .blog-box:hover .img-box {
   border-radius: 10px;
@@ -3795,17 +3803,16 @@ Blog section end
 }
 
 .author-box {
-  background-color: var(--white);
+  background-color: var(--bg-color3);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: var(--shadow3);
+  box-shadow: var(--shadow1);
 }
 
 .author-box-top {
   display: flex;
   align-items: center;
   gap: 40px;
-  background-color: var(--white);
 }
 .author-box-top .thumbs-area img {
   width: 250px;
@@ -3833,6 +3840,18 @@ Author section end
 /*----------------------------------------------
 19. Newsletter section start
 ----------------------------------------------*/
+.bg-img-overlay {
+  background-image: url(../img/background/bg_img2.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 .newsletter-form {
   margin-top: 40px;
   position: relative;
@@ -3843,7 +3862,6 @@ Author section end
   border-radius: 50px;
   height: 50px;
   padding: 10px 50px 10px 10px;
-  border-color: var(--primary-color-opacity-low);
 }
 .newsletter-form .form-control:focus {
   border-color: var(--primary-color);
@@ -3885,7 +3903,7 @@ Newsletter end
 ----------------------------------------------*/
 .footer-section {
   position: relative;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color1);
 }
 .footer-section .footer-section-inner {
   position: relative;
@@ -4089,13 +4107,13 @@ Banner end
   height: 40px;
   font-size: 18px;
   color: var(--primary-color);
-  background-color: var(--primary-color-opacity-low);
+  background-color: var(--bg-color3);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .contact-section .contact-message-area {
-  background-color: var(--white);
+  background-color: var(--bg-color3);
   padding: 30px 25px;
   box-shadow: var(--shadow1);
   border-radius: 5px;
@@ -4156,7 +4174,7 @@ Map section end
 
 .login-signup-form {
   padding: 30px;
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color3);
   border-radius: 5px;
   z-index: 1;
   position: relative;
@@ -4239,7 +4257,7 @@ Login Signup end
 .blog-quote-box {
   margin: 20px 0;
   position: relative;
-  background-color: var(--white);
+  background-color: var(--bg-color3);
   box-shadow: var(--shadow1);
   padding: 25px;
   border-left: 2px solid var(--primary-color);
@@ -4313,7 +4331,7 @@ Login Signup end
 
 .sidebar-widget-area {
   padding: 25px;
-  background-color: var(--white);
+  background-color: var(--bg-color3);
   border-radius: 5px;
   margin-bottom: 30px;
   box-shadow: var(--shadow1);
@@ -4466,16 +4484,18 @@ Policy section start
 ----------------------------------------------*/
 .policy-section {
   background-color: var(--bg-color1);
-  background-image: url(../img/background/login-bg.png);
   position: relative;
 }
 .policy-section .policy-section-inner {
   position: relative;
   z-index: 1;
   box-shadow: var(--shadow1);
-  background-color: var(--white);
+  background-color: var(--bg-color3);
   padding: 70px;
   border-radius: 5px;
+  background-image: url(../img/background/hero-bg.png);
+  background-size: cover;
+  background-position: top right;
 }
 
 .policy-list {
