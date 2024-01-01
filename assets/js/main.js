@@ -116,7 +116,7 @@ $(document).ready(function () {
             }
         });
     });
-    // Testimonial section start
+    // Testimonial section end
     // cmn select2 start
     $('.cmn-select2').select2();
     // cmn select2 end

@@ -888,9 +888,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 // Modal section start 
-.modal-content{
+.modal-content {
     background-color: var(--bg-color3);
 }
+
 .modal-header {
     border-bottom: 1px solid var(--border-color1);
     padding: 12px 16px;
@@ -1069,29 +1070,14 @@ Reusable style section start
 }
 
 // Responsive cmn box start
-@media(max-width: 991px) {
-    .cmn-box-item:nth-child(2) {
-        margin-top: var(--bs-gutter-y);
-    }
-
-    .cmn-box-item:nth-child(5) {
-        margin-top: var(--bs-gutter-y);
+@media(max-width: 575px) {
+    .cmn-box {
+        padding: 20px;
     }
 }
 
 // Responsive cmn box end
 // Rtl cmn box start
-.rtl {
-    .cmn-box2-item:nth-child(1) {
-        border-right: none;
-        border-left: 1px solid var(--border-color1);
-    }
-
-    .cmn-box2-item:nth-child(3) {
-        border-right: none;
-        border-left: 1px solid var(--border-color1);
-    }
-}
 
 // Rtl cmn box end
 // Cmn box end
@@ -3349,9 +3335,9 @@ Cmn table start
         --bs-table-accent-bg: var(--bg-color1);
     }
 
-    .table-striped>tbody>tr:nth-of-type(even)>* {
-        --bs-table-accent-bg: var(--primary-color-opacity-low);
-    }
+    // .table-striped>tbody>tr:nth-of-type(even)>* {
+    //     --bs-table-accent-bg: var(--primary-color-opacity-low);
+    // }
 
 
     .table-responsive .table thead {
@@ -3381,7 +3367,7 @@ Cmn table start
     .table-responsive .table tbody tr td::before {
         content: attr(data-label);
         font-size: 16px;
-        color: var(--black);
+        // color: var(--black);
         font-weight: 600;
         text-transform: capitalize;
         margin-right: 20px;
@@ -4018,6 +4004,12 @@ Bottom Mobile, Tab nav end
 
 }
 
+@media(max-width: 575px) {
+    .hero-section .hero-content .btn-area {
+        flex-direction: column;
+    }
+}
+
 // Hero responsive end
 /*----------------------------------------------
 Hero end
@@ -4031,25 +4023,6 @@ Hero end
 .feature-section {
     color: var(--white);
 
-    .feature-box {
-        padding: 30px;
-        border-radius: 10px;
-        background-color: var(--bg-color3);
-        height: 100%;
-
-        .icon-area {
-            color: var(--primary-color);
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
-
-        .content-area {
-            .title {
-                margin-bottom: 10px;
-            }
-        }
-    }
-
     h4 {
         color: var(--white);
     }
@@ -4059,34 +4032,30 @@ Hero end
     }
 }
 
-// Responsive feature section start
-@media(max-width: 991px) {
-    .feature-section {
-        .feature-section-inner {
-            grid-template-columns: repeat(2, 1fr);
+.feature-box {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--bg-color3);
+    height: 100%;
 
-            .item:nth-child(3) {
-                margin: 0;
-            }
+    .icon-area {
+        color: var(--primary-color);
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .content-area {
+        .title {
+            margin-bottom: 10px;
         }
     }
 }
 
-@media(max-width: 767px) {
-    .feature-section {
-        .feature-section-inner {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 15px;
-            padding: 20px;
+// Responsive feature section start
 
-            .item:nth-child(1) {
-                border-right: none;
-            }
-
-            .item:nth-child(3) {
-                padding: 20px;
-            }
-        }
+@media(max-width: 575px) {
+    .feature-box {
+        padding: 20px;
     }
 }
 
@@ -4131,7 +4100,6 @@ Feature section end
             width: 127px;
             max-width: 127px;
             top: 170px;
-            // left: 77px;
             left: 15%;
         }
 
@@ -4141,7 +4109,6 @@ Feature section end
             width: 77px;
             max-width: 77px;
             top: 70px;
-            // left: 359px;
             right: 18%;
         }
     }
@@ -4192,7 +4159,17 @@ Feature section end
         }
     }
 }
-
+@media(max-width: 575px){
+    .about-section .about-image-area{
+        .heart-img{
+           left: 10%; 
+           width: 80px;
+        }
+        .thumb-img{
+            width: 55px;
+        }
+    } 
+}
 // About responsive end
 
 /*----------------------------------------------
@@ -4291,7 +4268,8 @@ Service section end
     margin-bottom: 0;
     color: var(--white);
 }
-.table-striped>tbody>tr:nth-of-type(odd)>*{
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
     color: var(--white);
 }
 
@@ -4348,6 +4326,7 @@ Why Choose us section end
 ----------------------------------------------*/
 .achivement-counter-area {
     position: relative;
+
     &::after {
         position: absolute;
         top: 50%;
@@ -4361,6 +4340,20 @@ Why Choose us section end
         z-index: -1;
     }
 }
+
+// Responsive achivment section start
+@media(max-width: 991px) {
+    .achivement-section {
+        .content-area {
+            text-align: center;
+            .section-title{
+                margin: 0 auto 20px;
+            }
+        }
+    }
+}
+
+// Responsive achivment section end
 
 /*----------------------------------------------
 Achivement section end
@@ -4489,6 +4482,7 @@ Faq end
 09. Testimonial section start
 ----------------------------------------------*/
 .testimonial-section {
+
     .section-title,
     .cmn-para-text {
         color: var(--white);
@@ -4832,7 +4826,7 @@ Author section end
         border-radius: 50px;
         height: 50px;
         padding: 10px 50px 10px 10px;
-        // border-color: var(--primary-color-opacity-low);
+        border-color: var(--border-color1);
 
         &:focus {
             border-color: var(--primary-color);
@@ -5494,6 +5488,7 @@ Login Signup end
                 width: 100%;
                 height: 85px;
                 border-radius: 5px;
+                object-fit: cover;
             }
         }
 
@@ -5716,6 +5711,7 @@ Policy section start
 
 
 // Responsive policy seciton end
+
 /*----------------------------------------------
 Policy section end
 ----------------------------------------------*/

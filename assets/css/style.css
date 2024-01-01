@@ -914,23 +914,11 @@ Reusable style section start
   margin-bottom: 10px;
 }
 
-@media (max-width: 991px) {
-  .cmn-box-item:nth-child(2) {
-    margin-top: var(--bs-gutter-y);
-  }
-  .cmn-box-item:nth-child(5) {
-    margin-top: var(--bs-gutter-y);
+@media (max-width: 575px) {
+  .cmn-box {
+    padding: 20px;
   }
 }
-.rtl .cmn-box2-item:nth-child(1) {
-  border-right: none;
-  border-left: 1px solid var(--border-color1);
-}
-.rtl .cmn-box2-item:nth-child(3) {
-  border-right: none;
-  border-left: 1px solid var(--border-color1);
-}
-
 .cmn-box2 {
   gap: 20px;
   display: flex;
@@ -2712,9 +2700,6 @@ Cmn table start
   .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: var(--bg-color1);
   }
-  .table-striped > tbody > tr:nth-of-type(even) > * {
-    --bs-table-accent-bg: var(--primary-color-opacity-low);
-  }
   .table-responsive .table thead {
     display: none;
   }
@@ -2737,7 +2722,6 @@ Cmn table start
   .table-responsive .table tbody tr td::before {
     content: attr(data-label);
     font-size: 16px;
-    color: var(--black);
     font-weight: 600;
     text-transform: capitalize;
     margin-right: 20px;
@@ -3260,6 +3244,11 @@ Bottom Mobile, Tab nav end
     justify-content: center;
   }
 }
+@media (max-width: 575px) {
+  .hero-section .hero-content .btn-area {
+    flex-direction: column;
+  }
+}
 /*----------------------------------------------
 Hero end
 ----------------------------------------------*/
@@ -3269,20 +3258,6 @@ Hero end
 .feature-section {
   color: var(--white);
 }
-.feature-section .feature-box {
-  padding: 30px;
-  border-radius: 10px;
-  background-color: var(--bg-color3);
-  height: 100%;
-}
-.feature-section .feature-box .icon-area {
-  color: var(--primary-color);
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-.feature-section .feature-box .content-area .title {
-  margin-bottom: 10px;
-}
 .feature-section h4 {
   color: var(--white);
 }
@@ -3290,24 +3265,23 @@ Hero end
   color: #B2B2BC;
 }
 
-@media (max-width: 991px) {
-  .feature-section .feature-section-inner {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .feature-section .feature-section-inner .item:nth-child(3) {
-    margin: 0;
-  }
+.feature-box {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--bg-color3);
+  height: 100%;
 }
-@media (max-width: 767px) {
-  .feature-section .feature-section-inner {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-    padding: 20px;
-  }
-  .feature-section .feature-section-inner .item:nth-child(1) {
-    border-right: none;
-  }
-  .feature-section .feature-section-inner .item:nth-child(3) {
+.feature-box .icon-area {
+  color: var(--primary-color);
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.feature-box .content-area .title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+  .feature-box {
     padding: 20px;
   }
 }
@@ -3384,6 +3358,15 @@ Feature section end
   }
   .about-section .about-content .item-list-container .item .icon-box {
     margin: auto;
+  }
+}
+@media (max-width: 575px) {
+  .about-section .about-image-area .heart-img {
+    left: 10%;
+    width: 80px;
+  }
+  .about-section .about-image-area .thumb-img {
+    width: 55px;
   }
 }
 /*----------------------------------------------
@@ -3522,6 +3505,14 @@ Why Choose us section end
   z-index: -1;
 }
 
+@media (max-width: 991px) {
+  .achivement-section .content-area {
+    text-align: center;
+  }
+  .achivement-section .content-area .section-title {
+    margin: 0 auto 20px;
+  }
+}
 /*----------------------------------------------
 Achivement section end
 ----------------------------------------------*/
@@ -3862,6 +3853,7 @@ Author section end
   border-radius: 50px;
   height: 50px;
   padding: 10px 50px 10px 10px;
+  border-color: var(--border-color1);
 }
 .newsletter-form .form-control:focus {
   border-color: var(--primary-color);
@@ -4353,6 +4345,8 @@ Login Signup end
   width: 100%;
   height: 85px;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sidebar-widget-area .sidebar-widget-item .content-area {
   margin-left: 15px;

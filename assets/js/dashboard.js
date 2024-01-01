@@ -90,22 +90,6 @@ $(document).ready(function () {
 
 
 });
-// input field show hide password start
-const password = document.querySelector('.password');
-const passwordIcon = document.querySelector('.password-icon');
-
-passwordIcon.addEventListener("click", function () {
-    if (password.type == 'password') {
-        password.type = 'text';
-        passwordIcon.classList.add('fa-eye-slash');
-    } else {
-        password.type = 'password';
-        passwordIcon.classList.remove('fa-eye-slash');
-    }
-})
-// input field show hide password end
-
-
 
 
 // Dark theme start
