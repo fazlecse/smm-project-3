@@ -90,8 +90,7 @@ Typography
     --bg-color2: #11052c;
     --bg-color3: #161243;
     --bg-color4: #2c2979;
-    --gradient-bg: linear-gradient(188deg, hsl(var(--base)/0.5) 23%, var(--white) 84%);
-    --gradient-bg2: linear-gradient(290deg, hsl(var(--base)/0.1) 31%, var(--white) 95%);
+
 
     --body-color: #1a1a1a;
     --border-color1: #2c2979;
@@ -106,17 +105,10 @@ Typography
     --base-h: 39;
     --base-s: 89.4%;
     --base-l: 51.8%;
-
-    --secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
-    --secondary-h: 38.8;
-    --secondary-s: 100%;
-    --secondary-l: 50%;
-
 }
 
 // primary: #f2a516
 // secondary: #FFA500
-// secondary: #FF6400
 
 /*----------------------------------------------
 Dark theme section start

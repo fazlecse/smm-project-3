@@ -1,9 +1,9 @@
 /*----------------------------------------------
 Typography 
 ----------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Montserrat:wght@500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 :root {
-  --body-font: "DM Sans", sans-serif;
+  --body-font: "Montserrat", sans-serif;
   --heading-font: "Montserrat", sans-serif;
   --primary-color: hsl(var(--base));
   --secondary-color: hsl(var(--secondary));
@@ -13,7 +13,7 @@ Typography
   --white: #ffffff;
   --soft-blue: #C1BFFD;
   --grayish-violet: #f5f4f7;
-  --btn-hover-bg: linear-gradient(90deg, hsl(var(--secondary)) 0%, hsl(var(--base)) 100%);
+  --btn-hover-bg: #f5b846;
   --delete-btn-hover-bg: #dc4077;
   --soft-green: #ccf888;
   --soft-red: #d82a68;
@@ -28,7 +28,6 @@ Typography
   --secondary-color-opacity-low: rgb(10, 79, 213, 0.1);
   --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
   --bg-color1: #F8F8FA;
-  --gradient-bg: linear-gradient(90deg, hsl(var(--base)) 0%, hsl(var(--secondary)) 100%);
   --body-color: #1a1a1a;
   --border-color1: rgba(231, 234, 243, .7);
   --border-color2: rgba(140, 152, 164, .25);
@@ -37,13 +36,9 @@ Typography
   --shadow3: 0 0.6125rem 2.5rem 0.6125rem rgba(140, 152, 164, .175);
   --transition: all .3s ease-in-out;
   --base: var(--base-h) var(--base-s) var(--base-l);
-  --base-h: 23.8;
-  --base-s: 100%;
-  --base-l: 50%;
-  --secondary: var(--secondary-h) var(--secondary-s) var(--secondary-l);
-  --secondary-h: 32.8;
-  --secondary-s: 96.8%;
-  --secondary-l: 51.4%;
+  --base-h: 39;
+  --base-s: 89.4%;
+  --base-l: 51.8%;
 }
 
 /*----------------------------------------------
@@ -282,6 +277,7 @@ textarea.form-control {
 .form-label {
   font-size: 14px;
   text-transform: capitalize;
+  font-weight: 500;
 }
 
 .form-control {
@@ -306,7 +302,7 @@ textarea.form-control {
 }
 
 .form-control:disabled {
-  background: var(--primary-color-opacity-low);
+  background: #f8fafd;
 }
 
 .form-control:focus,
@@ -364,13 +360,14 @@ textarea.form-control {
   margin-bottom: 0;
   height: 40px;
   font-weight: 500 !important;
-  background: var(--gradient-bg);
+  background: var(--primary-color);
   border-radius: 5px;
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  transition: var(--transition);
 }
 .cmn-file-input .form-control {
   cursor: pointer;
@@ -637,6 +634,7 @@ h4 {
   font-size: 24px;
   margin-bottom: 5px;
   font-weight: 500;
+  text-transform: capitalize;
 }
 
 @media (max-width: 991px) {
@@ -886,7 +884,7 @@ Offcanvas section end
 }
 
 .cmn-btn {
-  background: var(--gradient-bg);
+  background: var(--primary-color);
   padding: 12px 15px;
   border-radius: 4px;
   transition: var(--transition);
@@ -2534,6 +2532,7 @@ Header section start
 .header-nav .profile .dropdown-header .profile-thum {
   max-width: 36px;
   max-height: 36px;
+  min-width: 36px;
   margin-right: 10px;
 }
 .header-nav .profile .dropdown-header .profile-thum img {
@@ -2925,7 +2924,7 @@ Account settings profile section start
 }
 .account-settings-navbar .nav .nav-link.active {
   color: var(--white);
-  background: var(--gradient-bg);
+  background: var(--primary-color);
   box-shadow: var(--shadow2);
 }
 .account-settings-navbar .nav .nav-link.active:hover {
