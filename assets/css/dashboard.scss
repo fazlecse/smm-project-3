@@ -23,13 +23,16 @@ Typography
     --vivid-orange: #fb6116;
     --yellow: #FCDA69;
     --orange: #FFC83E;
-    --input-color: #F9FAFB;
+    --input-color: #ffffff;
     --input-color2: #ffffff;
     --primary-color-opacity-low: hsl(var(--base)/0.1);
     --primary-color-opacity-low2: hsl(var(--secondary)/.2);
     --secondary-color-opacity-low: rgb(10, 79, 213, 0.1);
     --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
-    --bg-color1: #F8F8FA;
+    --bg-color1: #ffffff;
+    --bg-color3: #ffffff;
+    --bg-color4: #ffffff;
+    --bg-color5: #F8F8FA;
 
     --body-color: #1a1a1a;
     --border-color1: rgba(231, 234, 243, .7);
@@ -51,18 +54,18 @@ Typography
 Dark theme section start
 ----------------------------------------------*/
 .dark-theme {
-
-    --bg-color1: #00150F;
-    --bg-color2: #2c403d;
-    --bg-color3: #1B2D29;
+    --bg-color1: #0e0122;
+    --bg-color2: #11052c;
+    --bg-color3: #161243;
+    --bg-color4: #2c2979;
+    --bg-color5: #2c2979;
     --heading-color: #ffffff;
-    --border-color1: #37333e;
+    --border-color1: rgb(44, 41, 121, .7);
     --border-color2: rgba(234, 219, 215, 0.06);
     --border-color3: #ffffff;
     --bg-grad-color: #253A33;
-    --input-color: #1B2D29;
+    --input-color: var(--bg-color2);
     --body-color: #d1cbdb;
-
 
     p {
         color: #d1cbdb;
@@ -71,12 +74,10 @@ Dark theme section start
     .form-control,
     .form-select {
         color: var(--white);
-        border: 1px solid var(--bg-color3);
     }
 
     .form-control:focus {
         color: var(--heading-color);
-        background-color: var(--bg-color3);
     }
 
     .select2-dropdown {
@@ -350,7 +351,7 @@ textarea.form-control {
 .form-control,
 .form-select {
     border-radius: 5px;
-    background-color: var(--white);
+    background-color: var(--input-color);
     border: 1px solid var(--border-color1);
     height: 45px;
 }
@@ -358,12 +359,15 @@ textarea.form-control {
 .form-control:disabled {
     background: #f8fafd;
 }
+.dark-theme .form-control:disabled{
+    background-color: var(--bg-color4);
+}
 
 .form-control:focus,
 .form-select:focus {
     box-shadow: 0 0 1rem 0 rgba(140, 152, 164, .25);
     border: 1px solid var(--border-color2);
-    background-color: var(--white);
+    background-color: var(--bg-color2);
 }
 
 .form-check label,
@@ -556,7 +560,7 @@ intlTelInput end
 }
 
 .select2-container .select2-dropdown {
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     border: 1px solid var(--border-color1);
 }
 
@@ -837,11 +841,12 @@ body::-webkit-scrollbar-thumb {
     height: 40px;
     padding: 0;
     margin: 0;
-    border: 1px solid var(--border-color1);
+    border: 1px solid var(--border-color2);
     opacity: 1;
     box-shadow: none;
     border-radius: 6px;
     transition: var(--transition);
+    color: var(--heading-color);
 
     &:hover {
         background-color: var(--primary-color-opacity-low);
@@ -930,7 +935,7 @@ Reusable style section start
 Offcanvas section start
 ----------------------------------------------*/
 .offcanvas.offcanvas-end {
-    background-color: var(--white);
+    background-color: var(--bg-color4);
 }
 
 /*----------------------------------------------
@@ -1156,7 +1161,7 @@ Offcanvas section end
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     line-height: initial;
     color: #677788;
     border: 1px solid var(--border-color1);
@@ -1164,7 +1169,7 @@ Offcanvas section end
 
     &:hover {
         color: var(--primary-color);
-        background-color: var(--white);
+        background-color: var(--bg-color4);
         box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25);
 
     }
@@ -1603,7 +1608,7 @@ section {
 }
 
 .dropdown-divider {
-    border-top: 1px solid var(--border-color1);
+    border-top: 1px solid var(--border-color2);
 }
 
 .cmn-hr {
@@ -1647,8 +1652,9 @@ hr.divider:after {
     padding: 8px;
     border: none;
     box-shadow: var(--shadow3);
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     color: var(--heading-color);
+    padding-bottom: 0;
 
     .dropdown-header {
         border-bottom: 1px solid var(--border-color1);
@@ -1702,7 +1708,7 @@ Cmn table start
                     color: var(--heading-color);
                     padding: 20px 10px;
                     text-transform: capitalize;
-                    background-color: var(--bg-color1);
+                    background-color: var(--bg-color5);
 
                     &:first-child {
                         border-top-left-radius: 10px;
@@ -1721,6 +1727,7 @@ Cmn table start
     tbody {
         td {
             padding: 15px 10px;
+            background-color: var(--bg-color3);
 
             .icon-area {
                 width: 50px;
@@ -1855,7 +1862,7 @@ Cmn table start
 // Dark theme cmn table start
 .dark-theme {
     .cmn-table {
-        background-color: var(--bg-color4);
+        background-color: var(--bg-color3);
 
         table {
             color: var(--white);
@@ -1864,7 +1871,7 @@ Cmn table start
                 tr {
                     th {
                         color: var(--white);
-                        background-color: var(--bg-color6);
+                        background-color: var(--bg-color5);
                     }
                 }
             }
@@ -1903,7 +1910,7 @@ Cmn table end
 // Modal section start
 .modal {
     .modal-content {
-        background-color: var(--white);
+        background-color: var(--bg-color4);
     }
 
     .modal-header {
@@ -1969,11 +1976,15 @@ Chat section start
     &.active {
         background-color: var(--primary-color);
         color: var(--white);
+        &:hover{
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
     }
 
     &:hover {
         color: var(--primary-color);
-        background: var(--primary-color-opacity-low2);
+        background: hsl(var(--base)/.2);
     }
 }
 
@@ -1983,6 +1994,7 @@ Chat section start
     border-radius: 10px;
     margin-right: 10px;
     font-size: 16px;
+    color: var(--heading-color);
 
     &:hover {
         background-color: var(--primary-color-opacity-low);
@@ -2036,7 +2048,7 @@ Chat section start
 .message-container {
     box-shadow: var(--shadow1);
     border: 1px solid var(--border-color1);
-    background-color: var(--white);
+    background-color: var(--bg-color3);
     border-radius: 5px;
     min-height: 500px;
 
@@ -2054,7 +2066,7 @@ Chat section start
             display: flex;
             justify-content: space-between;
             margin: 15px;
-            background-color: var(--white);
+            background-color: var(--bg-color3);
             border-radius: 20px;
         }
 
@@ -2120,7 +2132,7 @@ Chat section start
                 padding: 5px 10px;
                 border-radius: 15px;
                 border-top-left-radius: 0;
-                background: var(--gradient-bg);
+                background: var(--primary-color);
                 color: var(--white);
                 max-width: 85%;
             }
@@ -2137,7 +2149,7 @@ Chat section start
             .message-text {
                 border-top-left-radius: 15px;
                 border-top-right-radius: 0;
-                background: var(--white);
+                background: var(--bg-color3);
                 color: var(--heading-color);
             }
 
@@ -2147,7 +2159,7 @@ Chat section start
             display: flex;
             align-items: center;
             padding: 10px;
-            background-color: var(--white);
+            background-color: var(--bg-color3);
             margin: 0 15px 15px 15px;
             border-radius: 20px;
 
@@ -2269,7 +2281,7 @@ Chat section start
         align-items: center;
         padding: 20px;
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--bg-color3);
         border-bottom-left-radius: 5px;
     }
 }
@@ -2368,13 +2380,16 @@ Chat section start
         }
     }
 
-
-
-
-
 }
 
 // Rtl caht seciton end
+// Dark theme chat section start
+.dark-theme{
+    .message-container .chat-box{
+        background-color: var(--bg-color1);
+    }
+}
+// Dark theme chat section end
 
 // Message offcanvas section start
 .offcanvas.offcanvas-end {
@@ -2393,10 +2408,53 @@ Chat section start
 
 // Message offcanvas section end
 
-
 /*----------------------------------------------
 Chat section end
 ----------------------------------------------*/
+// User data area start
+.user-data-area {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+    .user-badge {
+        position: absolute;
+        width: 160px;
+        height: 25px;
+        background: var(--primary-color);
+        top: 22px;
+        transform: rotate(45deg);
+        right: -48px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.user-data-box {
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .thumbs-area {
+        img {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            padding: 3px;
+            border: 1px solid var(--border-color1);
+            background-color: var(--white);
+        }
+    }
+}
+
+// User data area end
 
 /*----------------------------------------------
 Reusable style section end
@@ -2665,7 +2723,7 @@ Padding bottom
     border: none;
     border-radius: 10px;
     box-shadow: var(--shadow1);
-    background-color: var(--white);
+    background-color: var(--bg-color3);
     border: 1px solid var(--border-color1);
     transition: var(--transition);
 
@@ -2819,7 +2877,7 @@ Padding bottom
 // Bottom Mobile Tab nav section start
 // ----------------------------------------------------
 .bottom-nav {
-    background: var(--white);
+    background: var(--bg-color4);
     justify-content: space-around;
     box-shadow: var(--shadow3);
     border-top-right-radius: 10px;
@@ -2868,7 +2926,7 @@ Header section start
     transition: var(--transition);
     z-index: 997;
     height: 70px;
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     padding: 0 20px;
     border-bottom: 1px solid var(--border-color1);
 }
@@ -2996,17 +3054,20 @@ Header section start
         min-width: 340px;
 
         .notification-item {
-            border-radius: 3px;
-
-            &:hover {
-                background-color: var(--primary-color-opacity-low);
-            }
-
             a {
                 display: flex;
                 align-items: center;
                 padding: 10px;
                 transition: 0.3s;
+                border-radius: 3px;
+                margin: 5px 0;
+
+                &:hover {
+                    background-color: var(--primary-color-opacity-low);
+                }
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid var(--border-color2);
             }
 
             i {
@@ -3065,13 +3126,15 @@ Header section start
 
         .dropdown-header {
             .profile-thum {
-                max-width: 36px;
-                max-height: 36px;
-                min-width: 36px;
+               
                 margin-right: 10px;
 
                 img {
                     border-radius: 50%;
+                    max-width: 36px;
+                    max-height: 36px;
+                    min-height: 36px;
+                    min-width: 36px;
                 }
             }
         }
@@ -3136,7 +3199,6 @@ Header section start
             inset: 8px -15px auto auto !important;
         }
     }
-
 }
 
 // Header Nav rtl end
@@ -3146,7 +3208,7 @@ Sidebar start
 ------------------------------------------------*/
 .sidebar {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     bottom: 0;
     width: 300px;
@@ -3155,7 +3217,7 @@ Sidebar start
     padding: 20px;
     scrollbar-width: thin;
     scrollbar-color: #aab7cf transparent;
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     border-right: 1px solid var(--border-color1);
 }
 
@@ -3235,7 +3297,7 @@ Sidebar start
         font-size: 15px;
         color: var(--white);
         transition: var(--transition);
-        background: var(--bg-color3);
+        // background: var(--bg-color3);
         color: var(--heading-color);
         padding: 10px 15px;
         border-radius: 5px;
@@ -3398,7 +3460,7 @@ Main section start
     margin-top: 70px;
     padding: 30px;
     transition: all 0.3s;
-    background-color: var(--white);
+    background-color: var(--bg-color1);
     min-height: calc(100vh - 132px);
 
 
@@ -3442,12 +3504,12 @@ Main section start
     border-radius: 10px;
     box-shadow: var(--shadow1);
     border: none;
-    background-color: var(--white);
+    background-color: var(--bg-color3);
     border: 1px solid var(--border-color1);
 
     .card-header {
         padding: 20px;
-        background-color: var(--white);
+        background-color: var(--bg-color3);
         border-bottom: 1px solid var(--border-color1);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -3551,7 +3613,7 @@ Account settings profile section start
         gap: 5px;
 
         .nav-link {
-            background-color: var(--white);
+            background-color: var(--bg-color3);
             color: var(--heading-color);
             border-radius: 5px;
             padding: 8px 20px;
@@ -3698,7 +3760,7 @@ Footer it works section start
     transition: var(--transition);
     display: flex;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--bg-color4);
     border-top: 1px solid var(--border-color1);
 
     .copyright {
@@ -3749,7 +3811,7 @@ Pagination section start
             height: 40px;
             border-radius: 8px !important;
             color: var(--heading-color);
-            background-color: var(--white);
+            background-color: var(--bg-color4);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -3778,8 +3840,6 @@ Pagination section start
 // Dark theme pagination section start
 .dark-theme {
     .pagination .page-item .page-link {
-        background-color: var(--bg-color2);
-        border-color: var(--bg-color1);
 
         &:hover {
             background-color: var(--primary-color);
