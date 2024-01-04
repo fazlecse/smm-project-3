@@ -1178,6 +1178,11 @@ Offcanvas section end
         box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25);
     }
 }
+.dark-theme {
+    .action-btn-secondary{
+        color: #ffffff;
+    }
+}
 
 .delete-btn {
     position: relative;
@@ -1914,7 +1919,7 @@ Cmn table end
     }
 
     .modal-header {
-        border-bottom: 1px solid var(--border-color1);
+        border-bottom: 1px solid var(--border-color2);
 
         .modal-title {
             font-size: 20px;
@@ -1923,7 +1928,7 @@ Cmn table end
     }
 
     .modal-footer {
-        border-top: 1px solid var(--border-color1);
+        border-top: 1px solid var(--border-color2);
     }
 }
 
