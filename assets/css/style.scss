@@ -1443,7 +1443,7 @@ Reusable style section start
 Offcanvas section start 
 ----------------------------------------------*/
 .offcanvas {
-    background: var(--bg-color4);
+    background: var(--bg-color3);
 }
 
 .offcanvas.offcanvas-end {
@@ -3709,7 +3709,7 @@ Padding bottom
 01. Nav section start
 ----------------------------------------------*/
 .navbar.active {
-    background-color: var(--bg-color4);
+    background-color: var(--bg-color3);
     box-shadow: var(--shadow1);
     z-index: 999;
     padding: 10px 0;
@@ -3884,7 +3884,7 @@ Nav end
 02. Bottom Mobile, Tab nav section start
 ----------------------------------------------*/
 .bottom-nav {
-    background: var(--bg-color4);
+    background: var(--bg-color3);
     justify-content: space-around;
     box-shadow: var(--shadow2);
     border-top-right-radius: 8px;

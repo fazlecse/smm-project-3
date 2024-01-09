@@ -804,7 +804,7 @@ Reusable style section start
 Offcanvas section start
 ----------------------------------------------*/
 .offcanvas.offcanvas-end {
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color3);
 }
 
 /*----------------------------------------------
@@ -2432,7 +2432,7 @@ Header section start
   transition: var(--transition);
   z-index: 997;
   height: 70px;
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color3);
   padding: 0 20px;
   border-bottom: 1px solid var(--border-color1);
 }
@@ -2657,7 +2657,7 @@ Sidebar start
   padding: 20px;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color3);
   border-right: 1px solid var(--border-color1);
 }
 
@@ -3077,7 +3077,7 @@ Footer it works section start
   transition: var(--transition);
   display: flex;
   justify-content: center;
-  background-color: var(--bg-color4);
+  background-color: var(--bg-color3);
   border-top: 1px solid var(--border-color1);
 }
 .footer .copyright {
