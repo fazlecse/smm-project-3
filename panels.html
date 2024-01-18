@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdZilla Dashboard</title>
+    <title>SocialSprint Dashboard</title>
     <!-- Favicon link -->
     <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
     <!-- Fontawesome-6 Js link -->
@@ -39,6 +39,7 @@
         </div>
     </div>
     <!-- Preloader section end -->
+
 
     <!-- Header section start -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -141,7 +142,16 @@
                     <!-- End Notification Dropdown Items -->
 
                 </li><!-- End Notification Nav -->
-
+                <li class="nav-item">
+                    <div class="language-box">
+                        <i class="fa-light fa-coins"></i>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>USD</option>
+                            <option value="1">EUR</option>
+                            <option value="2">bdt</option>
+                        </select>
+                    </div>
+                </li>
                 <!-- Notification section end -->
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
@@ -202,7 +212,6 @@
     </header>
     <!-- Header section start -->
 
-
     <!-- Bottom Mobile Tab nav section start -->
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
@@ -224,7 +233,6 @@
         </li>
     </ul>
     <!-- Bottom Mobile Tab nav section end -->
-
 
 
     <!-- Sidebar section start -->
@@ -380,201 +388,166 @@
     <!-- Sidebar section end -->
 
 
+    <!-- Main section start -->
     <main id="main" class="main bg-color2">
         <div class="pagetitle">
-            <h3 class="mb-1">Profile</h3>
+            <h3 class="mb-1">panels</h3>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Profile</li>
+                    <li class="breadcrumb-item active">panels</li>
                 </ol>
             </nav>
         </div>
-        <!-- End Page Title -->
 
-        <div class="section dashboard">
-            <!-- Left side columns -->
-            <!-- Tab mobile view carousel start -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="title"><i class="fa-regular fa-box"></i>Order new panel
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="panelForm" class="row g-3">
+                            <div class="col-12">
 
-            <div class="row">
-                <!-- Account-settings -->
-                <!-- Account settings navbar start -->
-                <div class="account-settings-navbar">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="account-settings-profile.html"><i
-                                    class="fa-light fa-user"></i>profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#"><i class="fa-light fa-bell"></i>Notification</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="account-settings-identity-verification.html"><i
-                                    class="fa-light fa-link"></i> Identity Verification</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Account settings navbar end -->
-
-                <form>
-                    <div class="account-settings-profile-section">
-                        <div class="card">
-                            <div class="card-header border-0">
-                                <h5 class="card-title">Recent Devices</h5>
-                            </div>
-                            <div class="card-body pt-0">
-                                <p>We need permission from your browser to show notifications. <strong>Request
-                                        Permission</strong>
-                                </p>
-                                <!-- Cmn table start -->
-                                <div class="cmn-table mt-20">
-                                    <div class="table-responsive">
-                                        <table class="table align-middle">
-                                            <thead>
-                                                <tr>
-                                                    <th style="width: 15%;" scope="col">Type</th>
-                                                    <th style="width: 5%;" scope="col">✉️ Email</th>
-                                                    <th style="width: 5%;" scope="col">🖥 Browser</th>
-                                                    <th style="width: 3%;" scope="col">👩🏻‍💻 App</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-label="Type">
-                                                        <div class="d-flex align-items-center">
-                                                            <span>New for you</span>
-                                                        </div>
-
-                                                    </td>
-                                                    <td data-label="✉️ Email">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="🖥 Browser">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked2" checked>
-                                                        </div>
-                                                    </td>
-
-                                                    <td data-label="👩🏻‍💻 App">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked3" checked>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td data-label="Type">
-                                                        <div class="d-flex align-items-center">
-                                                            <span>Account activity
-                                                            </span>
-                                                        </div>
-
-                                                    </td>
-                                                    <td data-label="✉️ Email">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked4" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="🖥 Browser">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked5" checked>
-                                                        </div>
-                                                    </td>
-
-                                                    <td data-label="👩🏻‍💻 App">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked6" checked>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td data-label="Type">
-                                                        <div class="d-flex align-items-center">
-                                                            <span>A new browser used to sign in</span>
-                                                        </div>
-
-                                                    </td>
-                                                    <td data-label="✉️ Email">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked7" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="🖥 Browser">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked8" checked>
-                                                        </div>
-                                                    </td>
-
-                                                    <td data-label="👩🏻‍💻 App">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked9">
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td data-label="Type">
-                                                        <div class="d-flex align-items-center">
-                                                            <span>A new device is linked</span>
-                                                        </div>
-
-                                                    </td>
-                                                    <td data-label="✉️ Email">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked10" checked>
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="🖥 Browser">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked11">
-                                                        </div>
-                                                    </td>
-
-                                                    <td data-label="👩🏻‍💻 App">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                role="switch" id="flexSwitchCheckChecked12">
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-
-                                            </tbody>
-                                        </table>
+                                <div class="cmn-radio">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="panelType"
+                                                    id="domainRadio" value="content1" checked>
+                                                <label class="form-check-label" for="domainRadio">I have a domain
+                                                    name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="panelType"
+                                                    id="subdomainRadio" value="content2">
+                                                <label class="form-check-label" for="subdomainRadio">I want to place
+                                                    the panel on a subdomain</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- Cmn table end -->
                             </div>
-
-                        </div>
+                            <div class="col-12">
+                                <label for="Panel-domain" class="form-label">Panel domain</label>
+                                <input type="text" class="form-control" id="Panel-domain">
+                            </div>
+                            <div class="col-12 panel-content">
+                                
+                                <div class="col-12 panel-content">
+                                    <div id="content1" class="alert alert-info p-10 content" role="alert">
+                                        <div class="text-area">
+                                            <div class="mb-10">Please visit your registrar's dashboard and change
+                                                nameservers to:</div>
+                                            <h6>ns1.perfectdns.com</h6>
+                                            <h6>ns2.perfectdns.com</h6>
+                                        </div>
+                                    </div>
+                                    <div id="content2" class="alert alert-info p-10 content" role="alert">
+                                        <div class="text-area w-100">
+                                            <div class="mb-10">Please visit your domain's DNS zone editor and follow
+                                                the steps below:</div>
+                                            <ol class="list-group list-group-numbered">
+                                                <li class="list-group-item">Select CNAME as the record type.</li>
+                                                <li class="list-group-item">Enter your subdomain in the
+                                                    host/name/alias field.</li>
+                                                <li class="list-group-item">Enter perfectpanel.com in the
+                                                    value/answer/content field.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Panel currency</label>
+                                <select class="cmn-select2-image" name="state" id="sendCurrency">
+                                    <option value="gb">Pound sterling (GBP)</option>
+                                    <option value="us">United States Dollars (USD)</option>
+                                    <option value="ru">Russian Rubles (RUB)</option>
+                                    <option value="ca">Canadian dollar (CAD)</option>
+                                    <option value="tr">Turkish Lira (TRY)</option>
+                                    <option value="eu">Euro (EUR)</option>
+                                    <option value="id">Indonesian Rupiah (IDR)</option>
+                                    <option value="br">Brazilian Real (BRL)</option>
+                                    <option value="bd">Bangladeshi taka (BDT)</option>
+                                    <option value="JP">Japanese Yen (JPY)</option>
+                                    <option value="KR">South Korean Won (KRW)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="Admin-username" class="form-label">Admin username</label>
+                                <input type="text" class="form-control" id="Admin-username">
+                            </div>
+                            <div class="col-12">
+                                <label for="Admin-password" class="form-label">Admin password</label>
+                                <input type="password" class="form-control" id="Admin-password">
+                            </div>
+                            <div class="col-12">
+                                <label for="Confirm password" class="form-label">Confirm password</label>
+                                <input type="password" class="form-control" id="Confirm password">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="Yes, i have confirmed the order!">
+                                    <label class="form-check-label" for="Yes, i have confirmed the order!">
+                                        Yes, i have confirmed the order!
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="" class="cmn-btn mt-30">place order</a>
+                        </form>
                     </div>
-                </form>
-
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="title"><i class="fa-duotone fa-notes"></i>Fast Notes
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-0">You put the service ID followed by | followed by the link followed by |
+                            followed
+                            by quantity on each line To get the service ID of a service please check here:</p>
+                        <br>
+                        <a href="" class="link">https://Socialsprint.com/services</a>
+                        <p class="mb-0">Let’s say you want to use the Mass Order to add Instagram Followers to your
+                            3
+                            accounts: abcd, asdf, qwer</p>
+                        <br>
+                        <p class="mb-0">From the Services List, the service ID for this service “[Instagram
+                            Followers
+                            [100% Real - 30 Days Guarantee- NEW SERVICE” is 3740</p>
+                        <br>
+                        <p class="mb-0">Let’s say you want to add 1000 followers for each account, the output will
+                            be
+                            like this: ID|Link|Quantity</p>
+                        <br>
+                        <p>or in this example:</p>
+                        <ul>
+                            <li>3740|abcd|1000</li>
+                            <li>3740|abcd|1000</li>
+                            <li>3740|abcd|1000</li>
+                            <li>3740|abcd|1000</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
-    <!-- End #main -->
+    <!-- Main section start -->
+
+
 
     <!-- Footer section start -->
     <footer id="footer" class="footer">
         <div class="copyright">
-            &copy; Copyright <strong><span>AdZilla Admin</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            Designed by <a href="javascript:void(0)" class="highlight">Bug-Finder</a>
+            &copy; Copyright <strong><span>SocialSprint Admin</span></strong>. All Rights Reserved
         </div>
     </footer>
     <!-- Footer section end -->
@@ -585,8 +558,100 @@
 
 
 
+    <!-- Offcanvas sidebar start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Product Filter</h5>
+            <button type="button" class="cmn-btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-light fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row g-4">
+                    <div>
+                        <label for="ProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="ProductName">
+                    </div>
+                    <div>
+                        <label for="NumberOfSales" class="form-label">Number of sales</label>
+                        <input type="text" class="form-control" id="NumberOfSales">
+                    </div>
+                    <div id="formModal">
+                        <label class="form-label">status</label>
+                        <select class="modal-select" name="state">
+                            <option value="AL">All status</option>
+                            <option value="AL">Bangladesh</option>
+                            <option value="WY">Australia</option>
+                            <option value="WY">Belarus</option>
+                            <option value="WY">Canada</option>
+                            <option value="WY">China</option>
+                            <option value="WY">France</option>
+                            <option value="WY">Germany</option>
+                            <option value="WY">India</option>
+                            <option value="WY">Indonesia</option>
+                            <option value="WY">Italy</option>
+                            <option value="WY">Japan</option>
+                            <option value="WY">Korea</option>
+                        </select>
+                    </div>
+                    <div class="btn-area">
+                        <button type="submit" class="cmn-btn">Filter</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Offcanvas sidebar end -->
+
+    <!-- Modal section start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="cmn-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-light fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Modal body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="cmn-btn" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal section end -->
 
 
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById('panelForm');
+            form.addEventListener("change", (event) => {
+                showContent(event.target.value);
+            });
+            showContent(document.querySelector('input[name="panelType"]:checked').value);
+        });
+
+        const showContent = (contentId) => {
+            const allContent = document.querySelectorAll(".content");
+            allContent.forEach(content => {
+                content.style.display = "none";
+            });
+
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.style.display = "block";
+            }
+        };
+    </script>
 
 
 

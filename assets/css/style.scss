@@ -140,6 +140,7 @@ Dark theme section start
         background-color: var(--bg-color3);
     }
 
+
     .select2-dropdown {
         background-color: var(--bg-color2);
     }
@@ -523,8 +524,12 @@ textarea.form-control {
 
 .form-select {
     color: var(--body-color);
-    background-image: url(../img/accordion/white-down-arrow.png);
+    background-image: url(../img/accordion/down-arrow-white.png);
     background-size: 12px;
+}
+
+option {
+    background-color: var(--bg-color1);
 }
 
 .form-control,
@@ -852,7 +857,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0;
 
     &:hover {
-        background-color: var(--black);
+        background-color: hsl(var(--base)/.8);
     }
 }
 
@@ -971,10 +976,6 @@ Reusable style section start
 .language-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 10px;
-    color: var(--heading-color);
-
 
     .form-select {
         width: initial;
@@ -984,45 +985,42 @@ Reusable style section start
         background-color: transparent;
         text-transform: uppercase;
         font-size: 15px;
-        color: var(--white);
-        padding: 10px 30px 10px 5px;
-
-        option {
-            background-color: var(--bg-color2);
-            color: var(--white);
-        }
+        padding: 10px 15px 10px 5px;
+        background-position: right 0px center;
 
         &:focus {
             box-shadow: none;
         }
-
-
-    }
-}
-
-// Responsive language box start
-
-@media(max-width: 991px) {
-    .language-box {
-        margin-left: 15px;
     }
 }
 
 @media(max-width: 575px) {
+    .author-box-top {
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width: 425px) {
     .language-box {
-        .form-select {
-            padding: 10px 30px 10px 5px;
-            background-position: right 5px center;
+        i {
+            display: none;
         }
     }
 }
 
 // Responsive language box end
+
 // Rtl language box start
 .rtl {
     .language-box {
-        margin-left: 0;
-        margin-right: 15px;
+        .form-select {
+            padding: 10px 5px 10px 15px;
+            background-position: left 0px center;
+        }
     }
 }
 
@@ -1743,7 +1741,7 @@ Alerts section start
     .btn-close {
         position: absolute;
         top: 50%;
-        right: 30px;
+        right: 10px;
         z-index: 2;
         transform: translateY(-50%);
         padding: 0;

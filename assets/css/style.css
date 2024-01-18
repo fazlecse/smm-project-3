@@ -458,8 +458,12 @@ textarea.form-control {
 
 .form-select {
   color: var(--body-color);
-  background-image: url(../img/accordion/white-down-arrow.png);
+  background-image: url(../img/accordion/down-arrow-white.png);
   background-size: 12px;
+}
+
+option {
+  background-color: var(--bg-color1);
 }
 
 .form-control,
@@ -745,7 +749,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: var(--black);
+  background-color: hsl(var(--base)/0.8);
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -843,9 +847,6 @@ Reusable style section start
 .language-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 10px;
-  color: var(--heading-color);
 }
 .language-box .form-select {
   width: initial;
@@ -855,31 +856,28 @@ Reusable style section start
   background-color: transparent;
   text-transform: uppercase;
   font-size: 15px;
-  color: var(--white);
-  padding: 10px 30px 10px 5px;
-}
-.language-box .form-select option {
-  background-color: var(--bg-color2);
-  color: var(--white);
+  padding: 10px 15px 10px 5px;
+  background-position: right 0px center;
 }
 .language-box .form-select:focus {
   box-shadow: none;
 }
 
-@media (max-width: 991px) {
-  .language-box {
-    margin-left: 15px;
-  }
-}
 @media (max-width: 575px) {
-  .language-box .form-select {
-    padding: 10px 30px 10px 5px;
-    background-position: right 5px center;
+  .author-box-top .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-.rtl .language-box {
-  margin-left: 0;
-  margin-right: 15px;
+@media (max-width: 425px) {
+  .language-box i {
+    display: none;
+  }
+}
+.rtl .language-box .form-select {
+  padding: 10px 5px 10px 15px;
+  background-position: left 0px center;
 }
 
 .cmn-box {
@@ -1443,7 +1441,7 @@ Alerts section start
 .alert-dismissible .btn-close {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 10px;
   z-index: 2;
   transform: translateY(-50%);
   padding: 0;

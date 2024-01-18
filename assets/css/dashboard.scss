@@ -80,6 +80,14 @@ Dark theme section start
         color: var(--heading-color);
     }
 
+    .form-select {
+        background-image: url(../img/accordion/down-arrow-white.png);
+    }
+
+    option {
+        background-color: var(--bg-color1);
+    }
+
     .select2-dropdown {
         background-color: var(--bg-color2);
     }
@@ -117,7 +125,9 @@ Dark theme section start
         background-color: transparent;
     }
 
-
+    .dropdown-menu {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    }
 
 
 
@@ -151,6 +161,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 
@@ -359,7 +370,8 @@ textarea.form-control {
 .form-control:disabled {
     background: #f8fafd;
 }
-.dark-theme .form-control:disabled{
+
+.dark-theme .form-control:disabled {
     background-color: var(--bg-color4);
 }
 
@@ -401,12 +413,39 @@ textarea.form-control {
 }
 
 .form-select {
-    background-image: url(../img/arrow/arrow-down-sign-to-navigate.png);
     background-repeat: no-repeat;
     background-size: 12px;
 }
 
+.input-group-text {
+    gap: 5px;
+    background-color: var(--primary-color-opacity-low);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color1);
+    cursor: pointer;
+    text-transform: capitalize;
+}
 
+.rtl {
+
+    .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select,
+    .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        border-top-left-radius: .375rem;
+        border-bottom-left-radius: .375rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+    }
+}
 
 // Cmn file input start
 .cmn-file-input {
@@ -444,6 +483,61 @@ textarea.form-control {
 }
 
 // Cmn file input end
+// Cmn radio start
+.cmn-radio {
+    .form-check-input[type=radio]:checked+.form-check-label {
+        background-color: var(--primary-color-opacity-low);
+    }
+
+    .form-check {
+        padding-left: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-check-input {
+        position: absolute;
+        right: 15px;
+        margin: 0;
+    }
+
+    .form-check-label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 15px 35px 15px 15px;
+        cursor: pointer;
+        box-shadow: var(--shadow1);
+        border-radius: 5px;
+        transition: var(--transition);
+        gap: 15px;
+        border: 1px solid var(--border-color1);
+        background-color: var(--bg-color3);
+    }
+}
+
+// Rtl cmn radio start
+.rtl {
+    .cmn-radio .form-check {
+        padding-right: 0;
+    }
+}
+
+// Rtl cmn radio end
+
+// Cmn radio end
+.list-group {
+    background-color: var(--bg-color2);
+}
+
+.list-group-item {
+    color: var(--heading-color);
+    border: 1px solid var(--border-color1);
+    background-color: var(--bg-color2);
+
+}
 /*----------------------------------------------
 intlTelInput section start
 ----------------------------------------------*/
@@ -516,6 +610,13 @@ intlTelInput end
 // --------------------------------------------------------
 // Select2 start
 // --------------------------------------------------------
+img.img-flag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color2);
+}
+
 .select2 {
     width: 100% !important;
 }
@@ -536,6 +637,12 @@ intlTelInput end
     padding-right: 10px;
     padding-left: 0;
     color: var(--heading-color);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .select2-container .select2-selection--single:focus,
@@ -751,6 +858,7 @@ h5 {
     font-size: 20px;
     margin-bottom: 5px;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 h6 {
@@ -805,7 +913,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 
     &:hover {
-        background-color: var(--black);
+        background-color: hsl(var(--base)/.8);
     }
 }
 
@@ -862,11 +970,102 @@ Reset section end
 /*----------------------------------------------
 Reusable style section start
 ----------------------------------------------*/
+
+// Language box start
+.language-box {
+    display: flex;
+    align-items: center;
+
+    .form-select {
+        width: initial;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 10px 15px 10px 5px;
+        background-position: right 0px center;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .author-box-top {
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .language-box {
+        i {
+            display: none;
+        }
+    }
+}
+
+// Responsive language box end
+
+// Rtl language box start
+.rtl {
+    .language-box {
+        .form-select {
+            padding: 10px 5px 10px 15px;
+            background-position: left 0px center;
+        }
+    }
+}
+
+// Rtl language box end
+// Language box end
+
 .link {
     text-decoration: underline;
     color: var(--primary-color);
     transition: var(--transition);
 }
+
+// cmn box4 start
+.cmn-box4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .icon-box {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color-opacity-low);
+        color: var(--primary-color);
+        border-radius: 5px;
+        font-size: 18px;
+
+    }
+}
+
+// Responsive cmn box4 start
+@media(max-width: 767px) {
+    .cmn-box4 {
+        flex-direction: column;
+
+        .icon-box {
+            margin: auto;
+        }
+    }
+}
+
+// Responsive cmn box4 end
+// cmn box4 end
 
 // Link end
 // Input box start
@@ -1178,8 +1377,9 @@ Offcanvas section end
         box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25);
     }
 }
+
 .dark-theme {
-    .action-btn-secondary{
+    .action-btn-secondary {
         color: #ffffff;
     }
 }
@@ -1248,6 +1448,7 @@ Offcanvas section end
     padding: 10px 15px;
     border-radius: 15px;
     border: 1px solid;
+    border-right: 2px solid;
     border-left: 15px solid;
     background-color: var(--bg-color2);
 
@@ -1279,7 +1480,7 @@ Offcanvas section end
     .btn-close {
         position: absolute;
         top: 50%;
-        right: 30px;
+        right: 10px;
         z-index: 2;
         transform: translateY(-50%);
         padding: 0;
@@ -1326,6 +1527,16 @@ Offcanvas section end
     }
 }
 
+.alert-info {
+    color: var(--heading-color);
+    border-color: #d7e8f9;
+    border-left-color: #2E86DE;
+
+    .btn-close {
+        color: #2E86DE;
+    }
+}
+
 // Aler responsive start
 @media (max-width: 575px) {
     .alert {
@@ -1353,7 +1564,7 @@ Offcanvas section end
     }
 
     .alert-dismissible .btn-close {
-        left: 30px;
+        left: 10px;
         right: auto;
     }
 
@@ -1381,7 +1592,7 @@ Offcanvas section end
         }
 
         .alert-dismissible .btn-close {
-            left: 15px;
+            left: 10px;
         }
 
     }
@@ -1627,6 +1838,12 @@ section {
 
 }
 
+.cmn-hr2 {
+    margin: 20px 0;
+    border-color: var(--border-color1);
+    opacity: 1;
+}
+
 hr.divider {
     margin-top: 50px;
     padding: 0;
@@ -1711,7 +1928,7 @@ Cmn table start
                     font-size: 18px;
                     font-weight: 500;
                     color: var(--heading-color);
-                    padding: 20px 10px;
+                    padding: 15px 10px;
                     text-transform: capitalize;
                     background-color: var(--bg-color5);
 
@@ -1763,6 +1980,10 @@ Cmn table start
     tr {
         border: none;
 
+    }
+
+    tr:not(:last-child) {
+        border-bottom: 1px dashed var(--border-color2);
     }
 }
 
@@ -1858,9 +2079,32 @@ Cmn table start
     }
 }
 
-.rtl .cmn-table .table-img {
-    margin-right: 0;
-    margin-left: 10px;
+.rtl {
+    .cmn-table {
+        .table thead tr th:first-child {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .table thead tr th:last-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .table-responsive .table tbody tr td::before {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .table-img {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
 }
 
 // Rtl cmn tabele end
@@ -1981,7 +2225,8 @@ Chat section start
     &.active {
         background-color: var(--primary-color);
         color: var(--white);
-        &:hover{
+
+        &:hover {
             background-color: var(--primary-color);
             color: var(--white);
         }
@@ -2389,11 +2634,12 @@ Chat section start
 
 // Rtl caht seciton end
 // Dark theme chat section start
-.dark-theme{
-    .message-container .chat-box{
+.dark-theme {
+    .message-container .chat-box {
         background-color: var(--bg-color1);
     }
 }
+
 // Dark theme chat section end
 
 // Message offcanvas section start
@@ -3021,7 +3267,7 @@ Header section start
     }
 
     .nav-icon {
-        font-size: 22px;
+        font-size: 20px;
         color: var(--heading-color);
         position: relative;
     }
@@ -3046,6 +3292,7 @@ Header section start
         img {
             width: 36px;
             height: 36px;
+            min-width: 36px;
         }
 
         span {
@@ -3071,6 +3318,7 @@ Header section start
                     background-color: var(--primary-color-opacity-low);
                 }
             }
+
             &:not(:last-child) {
                 border-bottom: 1px solid var(--border-color2);
             }
@@ -3131,7 +3379,7 @@ Header section start
 
         .dropdown-header {
             .profile-thum {
-               
+
                 margin-right: 10px;
 
                 img {
@@ -3146,6 +3394,14 @@ Header section start
     }
 }
 
+// Responsive header nav start
+@media(max-width: 575px) {
+    .header-nav .nav-icons {
+        gap: 10px;
+    }
+}
+
+// Responsive header nav end
 // Header Nav rtl start
 .rtl {
     nav.header-nav.ms-auto {
@@ -3337,7 +3593,7 @@ Sidebar start
             transition: transform .2s ease-in-out;
             width: 18px;
             height: 18px;
-            background-color: var(--bg-color1);
+            background-color: var(--bg-color5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -3519,8 +3775,15 @@ Main section start
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
 
-        .card-title {
+        .title {
             margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                color: var(--primary-color);
+            }
         }
     }
 
@@ -3895,85 +4158,118 @@ transactions section end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-Paybill section start
-----------------------------------------------*/
-// paybill category section start
-.paybill-category-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+Payment section start
+-----------------------------------------------*/
+.payment-container-list {
+    margin-top: 20px;
+    height: 480px;
+    overflow: auto;
+    padding: 5px;
 
-    .category-box {
-        text-align: center;
-
-        &:hover {
-            .icon-box {
-                background-color: var(--primary-color-opacity-low);
-            }
-
-            .title {
-                color: var(--primary-color);
-            }
-        }
-
-
-        .icon-box {
-            padding: 15px;
-            border: 1px solid var(--primary-color-opacity-low);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100px;
-            height: 100px;
-            transition: var(--transition);
-
-            svg {
-                width: 45px;
-                height: 45px;
-            }
-        }
-
-        .title {
-            margin-top: 10px;
-            margin-bottom: 0;
-            color: var(--body-color);
-        }
-    }
-}
-
-// paybill category section end
-// paybill form section start
-.paybill-form {
-    .input-group-text {
-        border: 1px solid var(--border-color1);
-        background-color: var(--primary-color);
-        color: var(--bg-color3);
-    }
-}
-
-.paybill-form-btn-area {
-    margin-top: 30px;
-}
-
-// paybill form section end
-// Paybill form confirm sectio start
-.paybill-confirm-list {
     .item {
-        padding: 10px;
-        border: 1px solid var(--border-color1);
+        position: relative;
         display: flex;
         justify-content: space-between;
-        margin-top: -1px;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .form-check-label {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: var(--shadow1);
         border-radius: 5px;
+        transition: var(--transition);
+        gap: 15px;
+        border: 1px solid var(--border-color1);
+        background-color: var(--bg-color3);
+
+
+        .image-area {
+
+            img {
+                width: 50px;
+                height: 50px;
+                min-width: 50px;
+                min-height: 50px;
+                border-radius: 50%;
+            }
+        }
+
+        .content-area {
+            max-width: 400px;
+            padding-right: 30px;
+        }
+    }
+
+    .form-check-input {
+        position: absolute;
+        right: 15px;
+    }
+
+    .form-check-input[type=radio]:checked+.form-check-label {
+        background-color: var(--primary-color-opacity-low);
     }
 }
 
-// Paybill form confirm sectio end
+// Rtl payment section start
+.rtl {
+    .payment-container-list {
+        .form-check-label .content-area {
+            padding-right: 0;
+            padding-left: 30px;
+        }
+
+        .form-check-input {
+            left: 15px;
+            right: auto;
+        }
+    }
+}
+
+// Rtl payment section enn
+
+// Transfer details section start
+.transfer-details-section {
+    .link {
+        color: var(--heading-color);
+    }
+}
+
+.transfer-list {
+    padding: 15px;
+    margin-bottom: 20px;
+
+    h5 {
+        margin-bottom: 0;
+    }
+
+    .title:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+// Transfer details section end
+
 /*----------------------------------------------
-Paybill section end
-----------------------------------------------*/
+Payment section end
+-----------------------------------------------*/
 
 /*----------------------------------------------
 Chat widget section start
@@ -4189,3 +4485,122 @@ Wideget Section start
 /*----------------------------------------------
 Wideget Section end
 ----------------------------------------------*/
+
+/*----------------------------------------------
+Notice card section start
+-----------------------------------------------*/
+.notice-card {
+    border: 1px solid var(--border-color1);
+    box-shadow: var(--shadow1);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--bg-color3);
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .image-area {
+        margin-top: 15px;
+    }
+
+    img {
+        border: 1px solid var(--border-color1);
+        border-radius: 5px;
+        padding: 5px;
+        background-color: var(--white);
+    }
+
+    .content-area {
+        .title {
+            max-width: 450px;
+        }
+    }
+}
+
+.date-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    i {
+        color: var(--primary-color);
+    }
+}
+
+// Responsive notice card start
+@media(max-width: 767px) {
+    .notice-card .content-area .title {
+        text-align: center;
+    }
+
+    .date-box {
+        justify-content: center;
+    }
+}
+
+// Responsive notice card end
+/*----------------------------------------------
+Notice card section end
+-----------------------------------------------*/
+
+
+/*----------------------------------------------
+Api code box start
+-----------------------------------------------*/
+
+.api-code-box {
+    position: relative;
+    padding: 50px 20px 20px;
+    border-radius: 10px;
+    background-color: #293340;
+    color: var(--white);
+
+    .editor-dots {
+        position: absolute;
+        top: 20px;
+        height: 12px;
+        margin-left: 20px;
+        width: 12px;
+        min-width: 12px;
+        background-color: #f90;
+        border-radius: 50%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: -20px;
+            background-color: #18c96e;
+            width: 12px;
+            min-width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 20px;
+            background-color: #b71c1c;
+            width: 12px;
+            min-width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+    }
+}
+
+// Api code box rtl start
+.rtl {
+    .api-code-box {
+        .editor-dots {
+            margin-right: 20px;
+        }
+    }
+}
+
+// Api code box rtl end
+/*----------------------------------------------
+Api code box end
+-----------------------------------------------*/

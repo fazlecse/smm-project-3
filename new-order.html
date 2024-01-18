@@ -143,16 +143,17 @@
 
                 </li><!-- End Notification Nav -->
 
+                <!-- Notification section end -->
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/img/Person/1.jpg" alt="Profile" class="rounded-circle">
-                        <span class="d-none d-lg-block dropdown-toggle ps-2">John Doe</span>
-                    </a><!-- End Profile Iamge Icon -->
+                        <img src="assets/img/Person/2.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-xl-block dropdown-toggle ps-2">John Doe</span>
+                    </a>
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-                        <li class="dropdown-header d-flex justify-content-center text-start">
+                        <li class="dropdown-header d-flex justify-content-center align-items-center text-start">
                             <div class="profile-thum">
-                                <img src="assets/img/Person/1.jpg" alt="">
+                                <img src="assets/img/Person/2.jpg" alt="">
                             </div>
                             <div class="profile-content">
                                 <h6>John Doe</h6>
@@ -161,15 +162,11 @@
                         </li>
 
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                            <a class="dropdown-item d-flex align-items-center" href="account-settings-profile.html">
                                 <i class="fa-light fa-user"></i>
                                 <span>My Profile</span>
                             </a>
                         </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="account-settings-profile.html">
                                 <i class="fa-sharp fa-light fa-gear"></i>
@@ -177,9 +174,11 @@
                             </a>
                         </li>
                         <li>
-                            <hr class="dropdown-divider">
+                            <a class="dropdown-item d-flex align-items-center" href="api.html">
+                                <i class="fa-light fa-code"></i>
+                                <span>api</span>
+                            </a>
                         </li>
-
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
                                 <i class="fa-light fa-circle-question"></i>
@@ -187,18 +186,15 @@
                             </a>
                         </li>
                         <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <i class="fa-light fa-right-from-bracket"></i>
                                 <span>Sign Out</span>
                             </a>
                         </li>
 
-                    </ul><!-- End Profile Dropdown Items -->
-                </li><!-- End Profile Nav -->
+                    </ul>
+                </li>
+                <!-- Nav Profile section end -->
 
             </ul>
         </nav>
@@ -354,21 +350,21 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="user-panel-pay-bill.html">
-                    <i class="fa-light fa-image"></i>
-                    <span>subscription</span>
+                <a class="nav-link collapsed" href="user-panel-notice.html">
+                    <i class="fa-light fa-bullhorn"></i>
+                    <span>notice</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="chat-widget.html">
-                    <i class="fa-light fa-messages"></i>
-                    <span>Chat Widget</span>
+                <a class="nav-link collapsed" href="user-panel-add-fund.html">
+                    <i class="fa-light fa-wallet"></i>
+                    <span>add fund</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="chat.html">
-                    <i class="fa-light fa-messages"></i>
-                    <span>chat</span>
+                <a class="nav-link collapsed" href="panels.html">
+                    <i class="fa-light fa-box"></i>
+                    <span>panels</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -493,6 +489,10 @@
                             <div class="col-12">
                                 <label for="price" class="form-label">price</label>
                                 <input type="number" class="form-control" id="price" disabled>
+                            </div>
+                            <div class="col-12">
+                                <label for="Comments" class="form-label">Comments</label>
+                                <textarea class="form-control" id="Comments" rows="3"></textarea>
                             </div>
                             <div class="col-12">
                                 <div class="form-check">
